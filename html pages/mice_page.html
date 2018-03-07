@@ -2,113 +2,134 @@
 <html>
 <head>
 	<title>Mice</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="css/web1_css.css">
 </head>
 <body>
-<div>
-	<form>
-		<input type="text" name="searchBar" value="What are you looking for?">
-		<input type="button" name="searchButton" value="Search">
-	</form>
-	<ul>
-		<a href="home_page.html"><img src="images/logo2.gif" width="100" height="100"></a><br>
-				<button>Categories</button>
-				<div>
-		    <ul>
-				<a href="laptops_page.html">Laptops</a>
-				<a href="mice_page.html">Mice</a>
-				<a href="keyboards_page.html">Keyboards</a>
-				<a href="speakers_page.html">Speakers</a>
-			</ul>
+<div class="searchbar">
+			<input type="text" id="search" name="searchBar" value="What are you looking for?">
+			<input type="button" id="searchbtn" name="searchButton" value="Search">
+		</div>
+
+		<header>
+		<div class="pic"><a href="home_page.html"><img src="images/logo123.png" width="225" height="100"></a></div>
+
+		<div class="shop"><a href="shopping_cart_1.html"><img src="images/shoppingcart.png" width="100" height="100"></a></div>
+
+		
+
+		<div class="list">
+
+		<ul>
+			
+			<li>
+				<div class="dropdown">
+			    <button class="dropbtn">Categories</button>
+					<div class="dropdown-content">	
+						<a href="laptops_page.html">Laptops</a>
+						<a href="mice_page.html">Mice</a>
+						<a href="keyboards_page.html">Keyboards</a>
+						<a href="speakers_page.html">Speakers</a>
+					</div>
 				</div>
-		<a href="deals.html">Deals</a><br>
-		<a href="contact.html">Contact</a><br>
-		<a href="Register.html">Log in</a><br>
-		<a href="shopping_cart_1.html"><img src="images/shoppingcart.png" width="100" height="100"></a><br>
-	</ul>
+			</li>		
+			<li><a href="deals.html">Deals</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="Register.html">Log in</a></li>
+			
+			
+		</ul>
+
+		</div>
+		</header>
+<div id = "LapHead"><h1>Mice</h1></div>
+<div id="combined">
+<div class="fillters">
+	<h2>Filters</h2>
+
+	<h4>Brand</h4>
+	<div>
+		<input type="radio" name="brand" value="Apple" checked>Apple<br>
+		<input type="radio" name="brand" value="Asus">Asus<br>
+		<input type="radio" name="brand" value="Acer">Acer<br>
+	</div>
+
+	<h4>Price Range</h4>
+	<div>
+		<input type="range" min="229" max="2899" value="50">
+	</div>
+	<br>
+
+	<h4>Operating System</h4>
+
+	<div>
+		<input type="radio" name="OS" value="Mirrosoft Windows" checked>Microsoft Windows<br>
+		<input type="radio" name="OS" value="Google Chrome OS">Google Chrome OS<br>
+		<input type="radio" name="OS" value="Apple Mac OS">Apple Mac OS<br>
+	</div>
+
+	<h4>Colour</h4>
+
+	<div>
+		<input type="radio" name="colour" value="Silver">Silver<br>
+		<input type="radio" name="colour" value="Black" checked>Black<br>
+		<input type="radio" name="colour" value="White">White<br>
+	</div>
+	<br>
 </div>
-<hr>
-<div><h1>Mice</h1></div>
-<div>
-<h2>Filters</h2>
-</div>
-<div>
-<h4>Brand</h4>
-</div>
-<div>
-<input type="radio" name="brand" value="Apple" checked>Apple<br>
-<input type="radio" name="brand" value="Speedlink">Speedlink<br>
-<input type="radio" name="brand" value="Logitech">Logitech<br>
-</div>
-<div><h4>Price Range</h4></div>
-<div><input type="range" min="12" max="105" value="50"></div><br>
-<div>
-<h4>Signal transmission</h4>
-</div>
-<div>
-<input type="radio" name="Signal transmission" value="Bluetooth" checked>Bluetooth<br>
-<input type="radio" name="Signal transmission" value="Wired">Wired<br>
-<input type="radio" name="Signal transmission" value="Wireless">Wireless<br>
-</div>
-<div><h4>Colour</h4>
-</div>
-<div>
-<input type="radio" name="colour" value="Red">Red<br>
-<input type="radio" name="colour" value="Black" checked>Black<br>
-<input type="radio" name="colour" value="White">White<br>
-</div><br>
-<div>
-	<table>
-	<tr>
-			<td><img src="images/Apple_mouse.png"></td>
-			<td><h5>APPLE Magic Mouse 2</h5>
-				The Magic Mouse 2 from Apple works wirelessly via Bluetooth and glides smoothly across your desk thanks to the seamless bottom.<br>
+<div id="products">
+	<div id = "product">
+	<ul>
+			<li><img src="images/Apple_mouse.png"></li>
+			<li><h5>APPLE Magic Mouse 2</h5>
+				The Magic Mouse 2 from Apple works wirelessly via Bluetooth and works smoothly.<br>
 				Device type: Mouse<br>
 				Signal transmission: Bluetooth<br>
 				Connections: Lightning<br> 
 				Colour: White<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$100</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/speedlink_2.png"></td>
-			<td><h5>Speedlink Snappy Mouse</h5>
-				The Snappy Mouse from Speedlink is a handy wireless mouse that is suitable for both left and right-handed people.<br>
+		    </li>
+			<li id = "price"><center><h3>$100</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/speedlink_2.png"></li>
+			<li><h5>Speedlink Snappy Mouse</h5>
+				The Snappy Mouse from Speedlink is a handy wireless mouse that is suitable for everyone.<br>
 				Device type: Mouse<br>
 				Number of function keys: 3<br>
 				Signal transmission: Wireless<br> 
 				Colour: Red<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$12</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/speedlink_1.png"></td>
-			<td><h5>Speedlink Axon USB Mouse </h5>
+		    </li>
+			<li id = "price"><center><h3>$12</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/speedlink_1.png"></li>
+			<li><h5>Speedlink Axon USB Mouse </h5>
 				The AXON of speedlink is an extra-quiet mouse for those who value a hygienic workplace.<br>
 				Device type: Mouse<br>
 				Number of function keys: 5<br>
 				Connections: USB connection<br> 
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$30</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/speedlink_3.png"></td>
-			<td><h5>Speedlink Calado Silent Mouse</h5>
-				The wireless Calado Silent Mouse stands for whisper-quiet freedom of movement on the computer. Thanks to the high-quality rubber ergonomic coating, the mouse feels reliably.<br>
+		    </li>
+			<li id = "price"><center><h3>$30</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/speedlink_3.png"></li>
+			<li><h5>Speedlink Calado Silent Mouse</h5>
+				The wireless Calado Silent Mouse stands for whisper-quiet freedom of movement.<br>
 				Device type: Mouse<br>
 				Number of function keys: 5<br>
 				Signal transmission: Wireless<br> 
 				Colour: Red<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$25</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/logitech_1.png"></td>
-			<td><h5>Logitech M330 Silent Plus</h5>
+		    </li>
+			<li id = "price"><center><h3>$25</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/logitech_1.png"></li>
+			<li><h5>Logitech M330 Silent Plus</h5>
 				A mouse-free mouse, but with the familiar comfort that you're used to with a mouse.<br>
 				Device type: Mouse<br>
 				Signal transmission: Wireless<br>
@@ -116,12 +137,12 @@
 				Battery type: AA<br>
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$35</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/logitech_2.png"></td>
-			<td><h5>Logitech M187 Wireless Mini Mouse</h5>
+		    </li>
+			<li id = "price"><center><h3>$35</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/logitech_2.png"></li>
+			<li><h5>Logitech M187 Wireless Mini Mouse</h5>
 				A mouse-free mouse, but with the familiar comfort that you're used to with a mouse.<br>
 				Device type: Mouse<br>
 				Signal transmission: Wireless<br>
@@ -129,12 +150,12 @@
 				Battery type: AAA<br>
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$27</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/logitech_3.png"></td>
-			<td><h5>Logitech M100 </h5>
+		    </li>
+			<li id = "price"><center><h3>$27</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/logitech_3.png"></li>
+			<li><h5>Logitech M100 </h5>
 				Simple, reliable mouse for both left- and right-handed users thanks to the symmetrical design.<br>
 				Device type: Mouse<br>
 				Signal transmission: Wired<br>
@@ -142,25 +163,25 @@
 				Maximum resolution: 1,000 dpi<br>
 				Colour: White<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$17</h3><br><button>Add to cart</button></center></td>
-	</tr>
-<tr>
-		<td><img src="images/logitech_4.png"></td>
-			<td><h5>Logitech MX Anywhere 2</h5>
-				The Logitech MX Anywhere 2 is a suitable mouse for the office and at home and is the little brother of the famous Logitech MX Master mouse.<br>
+		    </li>
+			<li id = "price"><center><h3>$17</h3><br><button>Add to cart</button></center></li>
+	</ul>
+<ul>
+		<li><img src="images/logitech_4.png"></li>
+			<li><h5>Logitech MX Anywhere 2</h5>
+				The Logitech MX Anywhere 2 is a suitable mouse for the office and at home.<br>
 				Device type: Mouse<br>
 				Supported platform: PC / Mac<br>
 				Signal transmission: Bluetooth<br>
 				Maximum resolution: 1,000 dpi<br>
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$85</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/logitech_5.png"></td>
-			<td><h5>Logitech M280</h5>
+		    </li>
+			<li id = "price"><center><h3>$85</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/logitech_5.png"></li>
+			<li><h5>Logitech M280</h5>
 				Comfortable and accurate wireless computer mouse with nano receiver.<br>
 				Device type: Mouse<br>
 				Supported platform: PC<br>
@@ -168,49 +189,50 @@
 				Maximum resolution: 1,000 dpi<br>
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$35</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/logitech_6.png"></td>
-			<td><h5>Logitech MX Master 2S</h5>
-                Design on your desktop, write on your PC and keep track of your mail on your other laptop with 1 mouse.<br>
+		    </li>
+			<li id = "price"><center><h3>$35</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/logitech_6.png"></li>
+			<li><h5>Logitech MX Master 2S</h5>
+                Design on your desktop and write on your PC with this mouse.<br>
 				Device type: Mouse<br>
 				Connections: Micro USB connection<br>
 				Signal transmission: Wireless<br>
 				Maximum resolution: 4,000 dpi<br>
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$105</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/logitech_7.png"></td>
-			<td><h5>Logitech M560 Wireless Mouse</h5>
-                Design on your desktop, write on your PC and keep track of your mail on your other laptop with 1 mouse.<br>
+		    </li>
+			<li id = "price"><center><h3>$105</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/logitech_7.png"></li>
+			<li><h5>Logitech M560 Wireless Mouse</h5>
+                Design on your desktop and write on your PC with one mouse.<br>
 				Device type: Mouse<br>
 				Supported platform: PC<br>
 				Signal transmission: Wireless<br>
 				Battery type: AA<br>
 				Colour: White<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$50</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/logitech_8.png"></td>
-			<td><h5>Logitech M187 Wireless Mini Mouse</h5>
-                Design on your desktop, write on your PC and keep track of your mail on your other laptop with 1 mouse.<br>
+		    </li>
+			<li id = "price"><center><h3>$50</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/logitech_8.png"></li>
+			<li><h5>Logitech M187 Wireless Mini Mouse</h5>
+                Design on your desktop and write on your PC with one mouse.<br>
 				Device type: Mouse<br>
 				Supported platform: PC / Mac<br>
 				Signal transmission: Wireless<br>
 				Battery type: AAA<br>
 				Colour: Red<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$25</h3><br><button>Add to cart</button></center></td>
-	</tr>
-</table>
+		    </li>
+			<li id = "price"><center><h3>$25</h3><br><button>Add to cart</button></center></li>
+	</ul>
+</div>
+</div>
 
 </div>
 <div align="right"><button>Go Up</button></div><br>

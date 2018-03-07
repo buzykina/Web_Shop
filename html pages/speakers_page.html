@@ -2,206 +2,229 @@
 <html>
 <head>
 	<title>Speakers</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="css/web1_css.css">
 </head>
 <body>
-<div>
-	<form>
-		<input type="text" name="searchBar" value="What are you looking for?">
-		<input type="button" name="searchButton" value="Search">
-	</form>
-	<ul>
-		<a href="home_page.html"><img src="images/logo2.gif" width="100" height="100"></a><br>
-				<button>Categories</button>
-				<div>
-		    <ul>
-				<a href="laptops_page.html">Laptops</a>
-				<a href="mice_page.html">Mice</a>
-				<a href="keyboards_page.html">Keyboards</a>
-				<a href="speakers_page.html">Speakers</a>
-			</ul>
+<div class="searchbar">
+			<input type="text" id="search" name="searchBar" value="What are you looking for?">
+			<input type="button" id="searchbtn" name="searchButton" value="Search">
+		</div>
+
+		<header>
+		<div class="pic"><a href="home_page.html"><img src="images/logo123.png" width="225" height="100"></a></div>
+
+		<div class="shop"><a href="shopping_cart_1.html"><img src="images/shoppingcart.png" width="100" height="100"></a></div>
+
+		
+
+		<div class="list">
+
+		<ul>
+			
+			<li>
+				<div class="dropdown">
+			    <button class="dropbtn">Categories</button>
+					<div class="dropdown-content">	
+						<a href="laptops_page.html">Laptops</a>
+						<a href="mice_page.html">Mice</a>
+						<a href="keyboards_page.html">Keyboards</a>
+						<a href="speakers_page.html">Speakers</a>
+					</div>
 				</div>
-		<a href="deals.html">Deals</a><br>
-		<a href="contact.html">Contact</a><br>
-		<a href="Register.html">Log in</a><br>
-		<a href="shopping_cart_1.html"><img src="images/shoppingcart.png" width="100" height="100"></a><br>
-	</ul>
+			</li>		
+			<li><a href="deals.html">Deals</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="Register.html">Log in</a></li>
+			
+			
+		</ul>
+
+		</div>
+		</header>
+<div id = "LapHead"><h1>Speakers</h1></div>
+<div id="combined">
+<div class="fillters">
+	<h2>Filters</h2>
+
+	<h4>Brand</h4>
+	<div>
+		<input type="radio" name="brand" value="Apple" checked>Apple<br>
+		<input type="radio" name="brand" value="Asus">Asus<br>
+		<input type="radio" name="brand" value="Acer">Acer<br>
+	</div>
+
+	<h4>Price Range</h4>
+	<div>
+		<input type="range" min="229" max="2899" value="50">
+	</div>
+	<br>
+
+	<h4>Operating System</h4>
+
+	<div>
+		<input type="radio" name="OS" value="Mirrosoft Windows" checked>Microsoft Windows<br>
+		<input type="radio" name="OS" value="Google Chrome OS">Google Chrome OS<br>
+		<input type="radio" name="OS" value="Apple Mac OS">Apple Mac OS<br>
+	</div>
+
+	<h4>Colour</h4>
+
+	<div>
+		<input type="radio" name="colour" value="Silver">Silver<br>
+		<input type="radio" name="colour" value="Black" checked>Black<br>
+		<input type="radio" name="colour" value="White">White<br>
+	</div>
+	<br>
 </div>
-<hr>
-<div><h1>Speakers</h1></div>
-<div>
-<h2>Filters</h2>
-</div>
-<div>
-<h4>Brand</h4>
-</div>
-<div>
-<input type="radio" name="brand" value="JBL" checked>JBL<br>
-<input type="radio" name="brand" value="SONY">SONY<br>
-<input type="radio" name="brand" value="Bose">Bose<br>
-</div>
-<div><h4>Price Range</h4></div>
-<div><input type="range" min="35" max="255" value="50"></div><br>
-<div>
-<h4>Type</h4>
-</div>
-<div>
-<input type="radio" name="Waterproof" value="Yes" checked>waterproof<br>
-<input type="radio" name="Waterproof" value="No">Not waterproof<br>
-</div>
-<div><h4>Colour</h4>
-</div>
-<div>
-<input type="radio" name="colour" value="Blue">Blue<br>
-<input type="radio" name="colour" value="Gray" checked>Black<br>
-<input type="radio" name="colour" value="Green">Gray<br>
-</div><br>
-<div>
-	<table>
-	<tr>
-			<td><img src="images/jbl_1.png"></td>
-			<td><h5>JBL Flip 3 Special Edition</h5>
-				This JBL Flip 3 is a Special Edition because of its cool matte black color at the ends of the speaker.<br>
+<div id="products">
+	<div id = "product">
+	<ul>
+			<li><img src="images/jbl_1.png"></li>
+			<li><h5>JBL Flip 3 Special Edition</h5>
+				This JBL Flip 3 is a Special Edition because of its cool matte black color.<br>
 				Device type: Bluetooth speaker<br>
 				Battery life: 10 hours<br>
 				Speaker system: 2.0<br> 
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$85</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/jbl_2.png"></td>
-			<td><h5>JBL Xtreme </h5>
-				The Snappy Mouse from Speedlink is a handy wireless mouse that is suitable for both left and right-handed people.<br>
+		    </li>
+			<li id = "price"><center><h3>$85</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/jbl_2.png"></li>
+			<li><h5>JBL Xtreme </h5>
+				This JBL Xtreme is a Special Edition because of its cool black color at the ends of the speaker.<br>
 				Device type: Bluetooth speaker<br>
 				Battery life: 15 hours<br>
 				Frequency range: 70 Hz - 20 kHz<br> 
 				Colour: Blue<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$235</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/jbl_3.png"></td>
-			<td><h5>JBL Go</h5>
-				The JBL Go is a very compact and stylish Bluetooth speaker that you always take with you. Enjoy the powerful sound of this speaker wherever you are.<br>
+		    </li>
+			<li id = "price"><center><h3>$235</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/jbl_3.png"></li>
+			<li><h5>JBL Go</h5>
+				The JBL Go is a very compact and stylish Bluetooth speaker.<br>
 				Device type: Bluetooth speaker<br>
 				Battery life: 5 hours<br>
 				Frequency range: 180 Hz - 20 kHz<br> 
 				Colour: Gray<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$35</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/jbl_4.png"></td>
-			<td><h5>JBL Trip</h5>
-				The JBL Trip is a portable speaker that you can attach to the sun visor of your car to listen to music and make hands-free calls.<br>
+		    </li>
+			<li id = "price"><center><h3>$35</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/jbl_4.png"></li>
+			<li><h5>JBL Trip</h5>
+				The JBL Trip is a portable speaker that you can attach to the sun visor of your car.<br>
 				Device type: Bluetooth speaker<br>
 				Width: 13.4 cm<br>
 				Height: 6.4 cm<br> 
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$90</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/sony_1.png"></td>
-			<td><h5>SONY SRS-XB10</h5>
+		    </li>
+			<li id = "price"><center><h3>$90</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/sony_1.png"></li>
+			<li><h5>SONY SRS-XB10</h5>
 				A mouse-free mouse, but with the familiar comfort that you're used to with a mouse.<br>
 				Device type:  Bluetooth speaker<br>
 				Battery life: 16 hours<br>
 				Waterproof: Yes<br>
 				Colour: Blue<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$50</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/sony_2.png"></td>
-			<td><h5>SONY SRS-XB40</h5>
-				The Sony SRS-XB40 is the big brother of the Sony SRS-XB30 and has everything you're looking for in a Bluetooth speaker. Thanks to its water-resistant design, it has been made to make all your pool parties a success.<br>
+		    </li>
+			<li id = "price"><center><h3>$50</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/sony_2.png"></li>
+			<li><h5>SONY SRS-XB40</h5>
+				The Sony SRS-XB40 is the big brother of the Sony SRS-XB30.<br>
 				Device type:  Bluetooth speaker<br>
 				Battery life: 24 hours<br>
 				Waterproof: Yes<br>
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$160</h3><br><button>Add to cart</button></center></td>
-	</tr>
-<tr>
-		<td><img src="images/sony_3.png"></td>
-			<td><h5>SONY SRS-XB20</h5>
-				Look no further, because the Sony SRS-XB20 has everything you need. This Bluetooth speaker is small but powerful, thanks to the special Extra Bass button. Press the button and immediately experience a deep, powerful bass.<br>
+		    </li>
+			<li id = "price"><center><h3>$160</h3><br><button>Add to cart</button></center></li>
+	</ul>
+<ul>
+		<li><img src="images/sony_3.png"></li>
+			<li><h5>SONY SRS-XB20</h5>
+				Look no further, because the Sony SRS-XB20 has everything you need.<br>
 				Device type: Bluetooth speaker<br>
 				Battery life: 12 o'clock<br>
 				Waterproof: Yes<br>
 				Colour: Blue<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$85</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/sony_4.png"></td>
-			<td><h5>SONY GTK-XB60</h5>
-				Build a party at any location with the powerful Sony GTK-XB60. Thanks to NFC you can connect your smartphone or tablet to the speaker with just one simple and then stream your party tracks via Bluetooth.<br>
+		    </li>
+			<li id = "price"><center><h3>$85</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/sony_4.png"></li>
+			<li><h5>SONY GTK-XB60</h5>
+				Build a party at any location with the powerful Sony GTK-XB60..<br>
 				Device type: Party speaker<br>
 				Signal transmission: wired, wireless<br>
 				Bluetooth: Yes<br>
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$255</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/bose_1.png"></td>
-			<td><h5>BOSE SoundLink Revolve</h5>
-                Design on your desktop, write on your PC and keep track of your mail on your other laptop with 1 mouse.<br>
+		    </li>
+			<li id = "price"><center><h3>$255</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/bose_1.png"></li>
+			<li><h5>BOSE SoundLink Revolve</h5>
+                Look no further, because the BOSE SoundLink Revolve has everything you need.<br>
 				Device type: Bluetooth speaker<br>
 				Battery life: 12 o'clock<br>
 				Waterproof: Yes<br>
 				Colour: Gray<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$215</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/bose_2.png"></td>
-			<td><h5>BOSE SoundLink Micro</h5>
-               The Bose SoundLink Micro is made for all your adventures. With the special clip you easily attach the Bluetooth speaker to your backpack, cooler or handlebar.<br>
+		    </li>
+			<li id = "price"><center><h3>$215</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/bose_2.png"></li>
+			<li><h5>BOSE SoundLink Micro</h5>
+               The Bose SoundLink Micro is made for all your adventures.<br>
 				Device type: Bluetooth speaker<br>
 				Battery life: 6 hours<br>
 				Waterproof: Yess<br>
 				Colour: Blue<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$125</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/bose_3.png"></td>
-			<td><h5>BOSE SoundTouch 10</h5>
-                The Bose SoundTouch 10 is a versatile wireless music system with Wi-Fi and Bluetooth support. You get a flawless sound when you stream the tracks from your smartphone or tablet.<br>
+		    </li>
+			<li id = "price"><center><h3>$125</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/bose_3.png"></li>
+			<li><h5>BOSE SoundTouch 10</h5>
+                The Bose SoundTouch 10 is a versatile wireless music system with Wi-Fi and Bluetooth support.<br>
 				Device type: Multiroom speaker<br>
 				Wifi interface: Yes<br>
 				High Resolution Audio: No<br>
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$225</h3><br><button>Add to cart</button></center></td>
-	</tr>
-	<tr>
-		<td><img src="images/bose_4.png"></td>
-			<td><h5>BOSE SoundLink Mini II</h5>
-                The Bose SoundLink Mini II delivers a grand sound with deep, low tones and fits in the palm of your hand.<br>
+		    </li>
+			<li id = "price"><center><h3>$225</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	<ul>
+		<li><img src="images/bose_4.png"></li>
+			<li><h5>BOSE SoundLink Mini II</h5>
+                The Bose SoundLink Mini II delivers a grand sound with deep and low tones.<br>
 				Device type: Bluetooth speaker<br>
 				Battery life: 10 hours<br>
 				Wireless range: 9 m<br>
 				Colour: Black<br>
 				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
-		    </td>
-			<td><center><h3>$195</h3><br><button>Add to cart</button></center></td>
-	</tr>
-</table>
+		    </li>
+			<li id = "price"><center><h3>$195</h3><br><button>Add to cart</button></center></li>
+	</ul>
+	</div>
+</div>
 </div>
 <div align="right"><button>Go Up</button></div><br>
 <hr>
