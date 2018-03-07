@@ -24,7 +24,7 @@ $pageTitle = 'shopping_cart_1 page';
     <div class="table-cell">$499</div>
   </div>
   <div class="table-row">
-    <div class="table-cell">MacBoo</div>
+    <div class="table-cell">MacBook</div>
     <div class="table-cell">$1299</div>
     <div class="table-cell"><input type="number" size="2" min="0" max="18" value="1"></div>
     <div class="table-cell">$1299</div>
@@ -55,6 +55,5 @@ $pageTitle = 'shopping_cart_1 page';
   </div>
 </div>
 <a href="shopping_cart_2.php"><button id = "ContinueBTN">Continue</button></a>
-<?php include 'included/footer.html'; ?>
 </body>
 </html>

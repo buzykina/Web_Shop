@@ -1,79 +1,47 @@
+<?php 
+$pageTitle = 'Mice page';
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Mice</title>
-	<link rel="stylesheet" type="text/css" href="css/css.css">
-	<link rel="stylesheet" type="text/css" href="css/web1_css.css">
+	 <?php include 'included/common-head.html'; ?>
 </head>
 <body>
-<div class="searchbar">
-			<input type="text" id="search" name="searchBar" value="What are you looking for?">
-			<input type="button" id="searchbtn" name="searchButton" value="Search">
-		</div>
-
-		<header>
-		<div class="pic"><a href="home_page.html"><img src="images/logo123.png" width="225" height="100"></a></div>
-
-		<div class="shop"><a href="shopping_cart_1.html"><img src="images/shoppingcart.png" width="100" height="100"></a></div>
-
-		
-
-		<div class="list">
-
-		<ul>
-			
-			<li>
-				<div class="dropdown">
-			    <button class="dropbtn">Categories</button>
-					<div class="dropdown-content">	
-						<a href="laptops_page.html">Laptops</a>
-						<a href="mice_page.html">Mice</a>
-						<a href="keyboards_page.html">Keyboards</a>
-						<a href="speakers_page.html">Speakers</a>
-					</div>
-				</div>
-			</li>		
-			<li><a href="deals.html">Deals</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="Register.html">Log in</a></li>
-			
-			
-		</ul>
-
-		</div>
-		</header>
-<div id = "LapHead"><h1>Mice</h1></div>
+<?php include 'included/header.html'; ?>
+<h1 id = "LapHead">Mice</h1>
 <div id="combined">
 <div class="fillters">
 	<h2>Filters</h2>
 
 	<h4>Brand</h4>
 	<div>
-		<input type="radio" name="brand" value="Apple" checked>Apple<br>
-		<input type="radio" name="brand" value="Asus">Asus<br>
-		<input type="radio" name="brand" value="Acer">Acer<br>
+		<input type="radio" name="brand" value="Apple" checked><label>Apple</label><br>
+		<input type="radio" name="brand" value="Asus"><label>Speedlink</label><br>
+		<input type="radio" name="brand" value="Logitech"><label>Logitech</label><br>
 	</div>
 
 	<h4>Price Range</h4>
 	<div>
-		<input type="range" min="229" max="2899" value="50">
+		<input type="range" min="12" max="105" value="50">
 	</div>
 	<br>
 
-	<h4>Operating System</h4>
+	<h4>Signal transmission</h4>
 
 	<div>
-		<input type="radio" name="OS" value="Mirrosoft Windows" checked>Microsoft Windows<br>
-		<input type="radio" name="OS" value="Google Chrome OS">Google Chrome OS<br>
-		<input type="radio" name="OS" value="Apple Mac OS">Apple Mac OS<br>
+		<input type="radio" name="OS" value="Bluetooth" checked><label>Bluetooth</label><br>
+		<input type="radio" name="OS" value="Wired"><label>Wired</label><br>
+		<input type="radio" name="OS" value="Wireless"><label>Wireless</label><br>
 	</div>
 
 	<h4>Colour</h4>
 
 	<div>
-		<input type="radio" name="colour" value="Silver">Silver<br>
-		<input type="radio" name="colour" value="Black" checked>Black<br>
-		<input type="radio" name="colour" value="White">White<br>
+		<input type="radio" name="colour" value="Red"><label>Red</label><br>
+		<input type="radio" name="colour" value="Black" checked><label>Black</label><br>
+		<input type="radio" name="colour" value="White"><label>White</label><br>
 	</div>
 	<br>
 </div>
@@ -87,9 +55,11 @@
 				Signal transmission: Bluetooth<br>
 				Connections: Lightning<br> 
 				Colour: White<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$100</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$100</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 	<ul>
 		<li><img src="images/speedlink_2.png"></li>
@@ -99,9 +69,11 @@
 				Number of function keys: 3<br>
 				Signal transmission: Wireless<br> 
 				Colour: Red<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$12</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$12</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 	<ul>
 		<li><img src="images/speedlink_1.png"></li>
@@ -111,9 +83,11 @@
 				Number of function keys: 5<br>
 				Connections: USB connection<br> 
 				Colour: Black<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$30</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$30</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 	<ul>
 		<li><img src="images/speedlink_3.png"></li>
@@ -123,9 +97,11 @@
 				Number of function keys: 5<br>
 				Signal transmission: Wireless<br> 
 				Colour: Red<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$25</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$25</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 	<ul>
 		<li><img src="images/logitech_1.png"></li>
@@ -136,9 +112,11 @@
 				Number of function keys: 3<br>
 				Battery type: AA<br>
 				Colour: Black<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$35</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$35</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 	<ul>
 		<li><img src="images/logitech_2.png"></li>
@@ -149,9 +127,11 @@
 				Supported platform: PC / Mac<br>
 				Battery type: AAA<br>
 				Colour: Black<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$27</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$27</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 	<ul>
 		<li><img src="images/logitech_3.png"></li>
@@ -162,9 +142,11 @@
 				Number of function keys: 3<br>
 				Maximum resolution: 1,000 dpi<br>
 				Colour: White<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$17</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$17</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 <ul>
 		<li><img src="images/logitech_4.png"></li>
@@ -175,9 +157,11 @@
 				Signal transmission: Bluetooth<br>
 				Maximum resolution: 1,000 dpi<br>
 				Colour: Black<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$85</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$85</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 	<ul>
 		<li><img src="images/logitech_5.png"></li>
@@ -188,9 +172,11 @@
 				Signal transmission: Wireless<br>
 				Maximum resolution: 1,000 dpi<br>
 				Colour: Black<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$35</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$35</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 	<ul>
 		<li><img src="images/logitech_6.png"></li>
@@ -201,9 +187,11 @@
 				Signal transmission: Wireless<br>
 				Maximum resolution: 4,000 dpi<br>
 				Colour: Black<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$105</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$105</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 	<ul>
 		<li><img src="images/logitech_7.png"></li>
@@ -214,9 +202,11 @@
 				Signal transmission: Wireless<br>
 				Battery type: AA<br>
 				Colour: White<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$50</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$50</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 	<ul>
 		<li><img src="images/logitech_8.png"></li>
@@ -227,28 +217,31 @@
 				Signal transmission: Wireless<br>
 				Battery type: AAA<br>
 				Colour: Red<br>
-				 &#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
-			<li id = "price"><center><h3>$25</h3><br><button>Add to cart</button></center></li>
+			<li id = "price">
+				<h3>$25</h3><br><button class="AddToBasket">Add to cart</button>
+			</li>
 	</ul>
 </div>
 </div>
 
-</div>
-<div align="right"><button>Go Up</button></div><br>
-<hr>
-    <div>
-		<h3>Stay Connected!</h3>
-		<ul>
-		<a href="https://www.instagram.com/rajashop2018/"><img src="images/insta.png" width="50" height="50"></a>
-		<a href="https://www.facebook.com/profile.php?id=100024670205219"><img src="images/facebook.png" width="50" height="50"></a>
-		<a href="https://plus.google.com/u/4/discover"><img src="images/gplus.png" width="50" height="50"></a>
-		<a href="https://twitter.com/RaJaShop18"><img src="images/twitter.png" width="50" height="50"></a>
-		</ul>
-	</div>
-	<div>
-		<p>Done by RaJa @2018</p>
-	</div>
+</div><?php include 'included/footer.html'; ?>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</a></button>
+<script>
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>

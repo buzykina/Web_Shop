@@ -1,47 +1,15 @@
+<?php 
+$pageTitle = 'Laptops page';
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Laptops</title>
-	<link rel="stylesheet" type="text/css" href="css/css.css">
-	<link rel="stylesheet" type="text/css" href="css/web1_css.css">
+    <?php include 'included/common-head.html'; ?>
 </head>
 <body>
-<div class="searchbar">
-			<input type="text" id="search" name="searchBar" value="What are you looking for?">
-			<input type="button" id="searchbtn" name="searchButton" value="Search">
-		</div>
-
-		<header>
-		<div class="pic"><a href="home_page.html"><img src="images/logo123.png" width="225" height="100"></a></div>
-
-		<div class="shop"><a href="shopping_cart_1.html"><img src="images/shoppingcart.png" width="100" height="100"></a></div>
-
-		
-
-		<div class="list">
-
-		<ul>
-			
-			<li>
-				<div class="dropdown">
-			    <button class="dropbtn">Categories</button>
-					<div class="dropdown-content">	
-						<a href="laptops_page.html">Laptops</a>
-						<a href="mice_page.html">Mice</a>
-						<a href="keyboards_page.html">Keyboards</a>
-						<a href="speakers_page.html">Speakers</a>
-					</div>
-				</div>
-			</li>		
-			<li><a href="deals.html">Deals</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="Register.html">Log in</a></li>
-			
-			
-		</ul>
-
-		</div>
-		</header>
+ <?php include 'included/header.html'; ?>
 
 <h1 id = "LapHead">Laptops</h1>
 <div id="combined">
@@ -50,9 +18,9 @@
 
 		<h4>Brand</h4>
 		<div>
-			<input type="radio" name="brand" value="Apple" checked>Apple<br>
-			<input type="radio" name="brand" value="Asus">Asus<br>
-			<input type="radio" name="brand" value="Acer">Acer<br>
+			<input type="radio" name="brand" value="Apple" checked><label>Apple</label><br>
+			<input type="radio" name="brand" value="Asus"><label>Asus</label><br>
+			<input type="radio" name="brand" value="Acer"><label>Acer</label><br>
 		</div>
 
 		<h4>Price Range</h4>
@@ -64,17 +32,17 @@
 		<h4>Operating System</h4>
 
 		<div>
-			<input type="radio" name="OS" value="Mirrosoft Windows" checked>Microsoft Windows<br>
-			<input type="radio" name="OS" value="Google Chrome OS">Google Chrome OS<br>
-			<input type="radio" name="OS" value="Apple Mac OS">Apple Mac OS<br>
+			<input type="radio" name="OS" value="Mirrosoft Windows" checked><label>Microsoft Windows</label><br>
+			<input type="radio" name="OS" value="Google Chrome OS"><label>Google Chrome OS</label><br>
+			<input type="radio" name="OS" value="Apple Mac OS"><label>Apple Mac OS</label><br>
 		</div>
 
 		<h4>Colour</h4>
 
 		<div>
-			<input type="radio" name="colour" value="Silver">Silver<br>
-			<input type="radio" name="colour" value="Black" checked>Black<br>
-			<input type="radio" name="colour" value="White">White<br>
+			<input type="radio" name="colour" value="Silver"><label>Silver</label><br>
+			<input type="radio" name="colour" value="Black" checked><label>Black</label><br>
+			<input type="radio" name="colour" value="White"><label>White</label><br>
 		</div>
 		<br>
 	</div>
@@ -92,7 +60,9 @@
 					Form factor: Fixed screen<br>
 					&#10026;&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price"><center><h3>$949</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$949</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 			<div id = "product">
@@ -108,7 +78,9 @@
 					Display diagonal: 14 inches<br>
 					&#10026;&#10026;&#10026;<br>
 					</li>
-				<li id = "price"><center><h3>$249</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$249</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 			<div id = "product">
@@ -124,7 +96,9 @@
 					Form factor: Fixed screen<br>
 					&#10026;&#10026;&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price"><center><h3>$279</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$279</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 			<div id = "product">
@@ -140,7 +114,9 @@
 					Display diagonal (cm): 33.8 cm<br>
 				    &#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price"><center><h3>$699</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$699</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 			<div id = "product">
@@ -156,7 +132,9 @@
 					Form factor: Fixed screen<br
 					>&#10026;&#10026;&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price"><center><h3>$1348</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$1348</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 			<div id = "product">
@@ -172,7 +150,9 @@
 					Form factor: Fixed screen<br>
 					&#10026;&#10026;<br>
 				</li>
-				<li id = "price"><center><h3>$799</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$799</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 			<div id = "product">
@@ -187,7 +167,9 @@
 					Form factor: Fixed screen <br>
 					Display diagonal: 15.6 inches<br>
 					&#10026;&#10026;&#10026;<br></li>
-				<li id = "price"><center><h3>$469</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$469</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 			<div id = "product">
@@ -203,7 +185,9 @@
 					Form factor: Fixed screen<br>
 					&#10026;<br>
 				</li>
-				<li id = "price"><center><h3>$649</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$649</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 			<div id = "product">
@@ -219,7 +203,9 @@
 					Display diagonal: 14 inches<br>
 					&#10026;&#10026;&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price"><center><h3>$449</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$449</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 			<div id = "product">
@@ -235,7 +221,9 @@
 					Form factor: Foldable screen<br>
 					&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price"><center><h3>$299</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$299</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 			<div id = "product">
@@ -251,7 +239,9 @@
 					Image resolution: HD ready<br>
 					&#10026;&#10026;&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price"><center><h3>$229</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$229</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 			<div id = "product">
@@ -265,25 +255,29 @@
 					Operating system: Mac OS<br>
 					Battery life: 10 hours <br>
 					Form factor: Fixed screen<br>&#10026;&#10026;&#10026;&#10026;</li>
-				<li id = "price"><center><h3>$2899</h3><br><button>Add to cart</button></center></li>
+				<li id = "price">
+					<h3>$2899</h3><br><button class="AddToBasket">Add to cart</button>
+				</li>
 				</ul>
 			</div>
 	</div>
-</div>	
-<div align="right"><button>Go Up</button></div><br>
-<hr>
-    <div>
-		<h3>Stay Connected!</h3>
-		<ul>
-		<a href="https://www.instagram.com/rajashop2018/"><img src="images/insta.png" width="50" height="50"></a>
-		<a href="https://www.facebook.com/profile.php?id=100024670205219"><img src="images/facebook.png" width="50" height="50"></a>
-		<a href="https://plus.google.com/u/4/discover"><img src="images/gplus.png" width="50" height="50"></a>
-		<a href="https://twitter.com/RaJaShop18"><img src="images/twitter.png" width="50" height="50"></a>
-	</ul>
-	</div>
-	<div>
-		<p>Done by RaJa @2018</p>
-	</div>
+</div><?php include 'included/footer.html'; ?>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</a></button>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>
 

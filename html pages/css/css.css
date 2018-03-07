@@ -1,185 +1,36 @@
 
-
-.list * {
-	
-	display: inline;
-	text-decoration: none;
-    padding-left: 37px;
-    padding-right: 37px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    color: white;
-    font-family: Helvetica;
-    font-size: 16px;
-    background-color: #0E071D;
-    height: 74px;
-    		
-
-}
-
 a{
     text-decoration: none;
 }
-
-.navigationbar{
-	background-color:#0E071D;
-}
-
-
-.dropbtn {
-    background-color: #0E071D;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    font-family: Helvetica;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 30px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-    background-color: #0E071D;
-}
-
-.dropdown-content a:hover {background-color: white;}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    height: 360px;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: white;
-	color: #0E071D;
-	border-radius: 15px;
-}
-
 #current{
 	background-color: #3499D4;
 	border-radius: 15px;
 	cursor: default;
 
 }
-
-a:hover{
-	background-color: white;
-	color: #0E071D;
-	border-radius: 15px;
-}
-
-.searchbar{
-	display: flex;
-	flex:0 0 auto;
-	width: 100%;
-	justify-content: center;
-	background-color: #0E071D;
-	padding-top: 10px;
-}
-
-.pic{
-
-	float: left;
-	background-color: #0E071D;
-	padding-left: 60px;
-}
-
-#search{
-	border:none;
-	border-right: none;
-	border-top-left-radius:15px;
-	border-bottom-left-radius:15px;
-	padding: 10px;
-	width: 850px;
-}
-
-#searchbtn{
-	border:none;
-	border-top-right-radius:15px;
-	border-bottom-right-radius:15px;
-	padding: 10px;
-	font-weight: bold;
-}
-
-.shop{
-	float: right;
-	background-color: #0E071D;
-	padding-right: 165px;
-
-}
-
-p ul ul *{
-
-	display: inline;
-}
-
-header * {
-	background-color: #0E071D;
-}
-
 #banner{
 	width: 100%;
 }
-
-hr{
-	background-color: #0E071D;
-	color: #0E071D;
-	border-style: solid;
+h2,h1{
+	text-align: center;
 }
 
 s{
 	color: red;
 }
-
-table{
-	width: 100%;
-}
-
-button{
-	color:#0E071D;
-	background-color: white;
-	font-family: arial;
-	border-style: solid 1px;
-	border-color:  #0E071D;
-	padding: 7px;
-	cursor: pointer;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-h3{
-	font-family: Helvetica;
-	font-size: 28px;
-}
-
-h2{
-	font-family: Helvetica;
-	font-size: 20px;
-}
-
-body{
-	font-family: Helvetica;
+#dealscomputers ul li,#dealsspeakers ul li,#dealsmice ul li,#dealskeyboards ul li
+{
+  display: inline-block;
+  text-align: center;
+  font-style: normal;
+  font-variant: normal !important;
+  padding: 32px;
 }
 
 #login_container  {
+	padding-top:40px;
+	display: block;
+	text-align: center;
 	width: 500px;
 	margin: 0 auto;
 	background-color:#dfe6e9;
@@ -192,8 +43,12 @@ body{
 	margin: 0 auto;
 	font-family: Helvetica;	
 	font-size: 15px;
+	text-align: center;
 }
-
+.login_form label{
+  font-style: normal;
+  font-variant: normal !important;
+}
 #imglog{
 	width: 200px;
 	height: 200px;
@@ -266,6 +121,8 @@ body{
 
 #map{
 	outline: 1px solid black;
+	margin: 0 auto;
+	display:block;
 }
 
 .tbl{
@@ -273,6 +130,10 @@ body{
 	margin: 0 auto;
 	padding-left: 100px;
 	padding-right: 0px;
+	padding-bottom: 20px;
+	font-style: normal;
+    font-variant: normal !important;
+
 }
 
 #bt_regi{
@@ -293,14 +154,14 @@ body{
 #bt_regi a:hover {
 	background-color: #636e72;
 }
-
 #forgot_container  {
 	width: 500px;
 	margin: 0 auto;
 	background-color:#dfe6e9;
 	border-radius: 20px;
 	border: 2px solid #636e72;
-	height: 300px;
+	height: 400px;
+	text-align:center;
 }
 
 #register_container{
@@ -309,37 +170,44 @@ body{
 	background-color:#dfe6e9;
 	border-radius: 20px;
 	border: 2px solid #636e72;
-	height: 500px;
+	height: 600px;
 }
 
-#dealscomputers ul li{
-    display: inline-block;
-    padding: 32px;
-}
 
 #combined{
 	display: flex;
 	flex: 0 0 auto;
 	width: 100%;
 }
-
+.Laphead{
+	text-align: center;
+}
 .fillters{
 	display: flex;
 	flex: 0 0 auto;
 	flex-direction: column;
 	background-color: #dfe6e9;
 	border-radius: 15px;
-	width: 200px;
+	width: 250px;
 	height: 550px;
 	position: sticky;
 	position: -webkit-sticky;
-	top: 20px;
-	bottom: 20px;
+	top: 10px;
+	bottom: 30px;
 	left:20px;
 }
 
 .fillters  h2, .fillters h4{
 	text-align: center;
+}
+.fillters label,.login_form label{
+  font-style: normal;
+  font-variant: normal !important;
+}
+.fillters input[type="range" i]{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .products{
@@ -349,28 +217,20 @@ body{
 	text-align: left;
 }
 
-#dealslaptops ul li{
-	display: inline-block;
-    padding: 27px;
-}
-
-#dealsmice ul li{
-	display: inline-block;
-    padding: 23px;
-}
-
-#dealskeyboards ul li{
-	display: inline-block;
-    padding: 23px;
-}
 
 #product ul li{
 	display: inline-block;
     padding: 23px;
+    font-style: normal;
+    font-variant: normal !important;
 }
 
 #price{
 	float: right;
+	text-align: center;
+}
+#price h3{
+text-align: center;
 }
 
 #LapHead{
