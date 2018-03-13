@@ -8,7 +8,7 @@ $pageTitle = 'Mice page';
 	<title>Mice</title>
 	 <?php include 'included/common-head.html'; ?>
 </head>
-<body>
+<body onload="zeroNumber()">
 <?php include 'included/header.html'; ?>
 <h1 id = "LapHead">Mice</h1>
 <div id="combined">
@@ -58,7 +58,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$100</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$100</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 	<ul>
@@ -72,7 +72,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$12</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$12</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 	<ul>
@@ -86,7 +86,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$30</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$30</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 	<ul>
@@ -100,7 +100,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$25</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$25</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 	<ul>
@@ -115,7 +115,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$35</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$35</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 	<ul>
@@ -130,7 +130,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$27</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$27</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 	<ul>
@@ -145,7 +145,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$17</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$17</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 <ul>
@@ -160,7 +160,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$85</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$85</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 	<ul>
@@ -175,7 +175,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$35</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$35</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 	<ul>
@@ -190,7 +190,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$105</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$105</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 	<ul>
@@ -205,7 +205,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$50</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$50</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 	<ul>
@@ -220,7 +220,7 @@ $pageTitle = 'Mice page';
 				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
 		    </li>
 			<li id = "price">
-				<h3>$25</h3><br><button class="AddToBasket">Add to cart</button>
+				<h3>$25</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 			</li>
 	</ul>
 </div>
@@ -228,20 +228,5 @@ $pageTitle = 'Mice page';
 
 </div><?php include 'included/footer.html'; ?>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</a></button>
-<script>
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-</script>
 </body>
 </html>

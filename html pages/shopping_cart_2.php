@@ -7,7 +7,7 @@ $pageTitle = 'shopping_cart_2';
 	<title>Shopping cart</title>
 	<?php include 'included/common-head.html'; ?>
 </head>
-<body>
+<body onload="zeroNumber()">
 <?php include 'included/header.html'; ?>
 <div id = "Deliver">
 	<p> Hello "Name", </p>

@@ -7,7 +7,7 @@ $pageTitle = 'Recover Password page';
 <head>
 	<title>Recover Password</title>
 	<?php include 'included/common-head.html'; ?>
-<body>
+<body onload="zeroNumber()">
 	<?php include 'included/header.html'; ?><br>
 	<div id ="forgot_container">
 		<h2>Recover Password</h2><br>
@@ -18,7 +18,7 @@ $pageTitle = 'Recover Password page';
 				<input type="text" name="emailPassword" size = "25">    <input type="submit" name="recoverLogIn" value="Enter"><br><br>
 				<label>Haven't recieved your password yet? Click the button bellow</label><br><br>
 				<input type="submit" name="resendEmailPassword" value="Send Password Again"><br><br>
-				<button id="bt_regi"><a href="index.php">Home</a></button> 
+				<button class = "btn"><a href="index.php">Home</a></button> 
 			</form>
 	</div>
 </body>

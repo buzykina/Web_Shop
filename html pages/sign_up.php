@@ -7,7 +7,7 @@ $pageTitle = 'Sign up page';
 	<title>Sign Up</title>
 	<?php include 'included/common-head.html'; ?>
 </head>
-<body>
+<body onload="zeroNumber()">
 <?php include 'included/header.html'; ?><br>
 	<div id ="register_container">
 		<h2>Sign Up</h2>
@@ -28,8 +28,8 @@ $pageTitle = 'Sign up page';
 			<input type="text" name="password" value="Password" width="300" size="100" size="100"><br><br>
 			<label>Confirm Password:</label> <br>
 			<input type="text" name="confrimPassword" value="Confirm Password" width="300" size="100"><br><br>
-			<button id="bt_regi"><a href="Register.php">Back</a></button>   
-			<button id="bt_regi"><a href="#">Next</a></button>
+			<button class = "btn"><a href="sign_in.php">Back</a></button>   
+			<input type="submit" class = "btn" name="login" value="Next">
 		</form>
 	</div>
 	<br>

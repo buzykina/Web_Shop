@@ -11,19 +11,12 @@ a{
 #banner{
 	width: 100%;
 }
-h2,h1{
-	text-align: center;
-}
-
 s{
 	color: red;
 }
-#dealscomputers ul li,#dealsspeakers ul li,#dealsmice ul li,#dealskeyboards ul li
+.deals ul li
 {
-  display: inline-block;
   text-align: center;
-  font-style: normal;
-  font-variant: normal !important;
   padding: 32px;
 }
 
@@ -54,11 +47,6 @@ s{
 	height: 200px;
 	padding: 20px;
 }
-
-.logbody{
-	background-color: white;
-}
-
 .inputvals{
 	width: 300px;
 	margin: 0 auto;
@@ -66,7 +54,7 @@ s{
 	text-align: center;
 }
 
-#bt_signin{
+.btn{
 	background-color: #636e72;
 	text-decoration-style: Palatino Linotype;
 	text-decoration-color: #dfe6e9;
@@ -77,40 +65,11 @@ s{
 	cursor: pointer;
 }
 
-#bt_reg{
-	background-color: #636e72;
-	text-decoration-style: Palatino Linotype;
-	text-decoration-color: #dfe6e9;
-	border-radius: 6px;
-	border: 1px solid #2d3436;
-	padding: 5px;
-	width: 100px;
-	}
-
-#bt_forgotpass{
-	background-color: #636e72;
-	text-decoration-style: Palatino Linotype;
-	text-decoration-color: #dfe6e9;
-	border-radius: 6px;
-	border: 1px solid #2d3436;
-	padding: 5px;
-	width: 100px;
-
-}
-
-#bt_forgotpass a:hover{
-	background-color: #636e72;
-}
-
-#bt_forgotpass a{
+.btn a{
 	color: black;
 }
 
-#bt_reg a{
-	color: black;
-}
-
-#bt_reg a:hover{
+.btn a:hover{
 	background-color: #636e72;
 }
 
@@ -134,25 +93,6 @@ s{
 	font-style: normal;
     font-variant: normal !important;
 
-}
-
-#bt_regi{
-	background-color: #636e72;
-	text-decoration-style: Palatino Linotype;
-	text-decoration-color: #dfe6e9;
-	border-radius: 6px;
-	border: 1px solid #2d3436;
-	padding: 5px;
-	width: 100px;
-	cursor: pointer;
-}
-
-#bt_regi a {
-	color: black;
-}
-
-#bt_regi a:hover {
-	background-color: #636e72;
 }
 #forgot_container  {
 	width: 500px;
@@ -179,9 +119,6 @@ s{
 	flex: 0 0 auto;
 	width: 100%;
 }
-.Laphead{
-	text-align: center;
-}
 .fillters{
 	display: flex;
 	flex: 0 0 auto;
@@ -195,14 +132,6 @@ s{
 	top: 10px;
 	bottom: 30px;
 	left:20px;
-}
-
-.fillters  h2, .fillters h4{
-	text-align: center;
-}
-.fillters label,.login_form label{
-  font-style: normal;
-  font-variant: normal !important;
 }
 .fillters input[type="range" i]{
 	margin-left: auto;
@@ -219,21 +148,16 @@ s{
 
 
 #product ul li{
-	display: inline-block;
     padding: 23px;
-    font-style: normal;
-    font-variant: normal !important;
 }
 
 #price{
 	float: right;
 	text-align: center;
 }
-#price h3{
-text-align: center;
+.hidden{
+	display:none;
 }
-
-#LapHead{
-	text-align: center;
+.show{
+	display:block;
 }
-

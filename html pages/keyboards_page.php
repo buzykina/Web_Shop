@@ -8,7 +8,7 @@ $pageTitle = 'keyboards page';
 	<title>Keyboards</title>
 	<?php include 'included/common-head.html'; ?>
 </head>
-<body>
+<body onload="zeroNumber()">
 <?php include 'included/header.html'; ?>
 <h1 id = "LapHead">Keyboards</h1>
 <div id="combined">
@@ -59,7 +59,7 @@ $pageTitle = 'keyboards page';
 				&#10026;&#10026;&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$179</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$179</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -76,7 +76,7 @@ $pageTitle = 'keyboards page';
 				&#10026;&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$39</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$39</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -93,7 +93,7 @@ $pageTitle = 'keyboards page';
 					&#10026;&#10026;&#10026;&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$144</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$144</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -110,7 +110,7 @@ $pageTitle = 'keyboards page';
 				    &#10026;&#10026;&#10026;&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$150</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$150</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -127,7 +127,7 @@ $pageTitle = 'keyboards page';
 				    &#10026;&#10026;&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$150</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$150</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -144,7 +144,7 @@ $pageTitle = 'keyboards page';
 					&#10026;&#10026;&#10026;&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$55</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$55</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -161,7 +161,7 @@ $pageTitle = 'keyboards page';
 					&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$140</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$140</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -178,7 +178,7 @@ $pageTitle = 'keyboards page';
 					&#10026;&#10026;&#10026;&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$16</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$16</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -195,7 +195,7 @@ $pageTitle = 'keyboards page';
 					&#10026;&#10026;&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$65</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$65</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -212,7 +212,7 @@ $pageTitle = 'keyboards page';
 					&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$55</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$55</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -228,7 +228,7 @@ $pageTitle = 'keyboards page';
 					Function keys: No<br>&#10026;&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$60</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$60</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -245,7 +245,7 @@ $pageTitle = 'keyboards page';
 					&#10026;&#10026;&#10026;
 				</li>
 				<li id = "price">
-					<h3>$160</h3><br><button class="AddToBasket">Add to cart</button>
+					<h3>$160</h3><br><button onclick = "AddToBasket()" class="AddToBasket">Add to cart</button>
 				</li>
 			</ul>
 		</div>
@@ -253,20 +253,5 @@ $pageTitle = 'keyboards page';
 </div>
 <?php include 'included/footer.html'; ?>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</a></button>
-<script>
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-</script>
 </body>
 </html>

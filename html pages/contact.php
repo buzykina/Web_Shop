@@ -7,7 +7,7 @@ $pageTitle = 'Contact page';
 	<title>Contact</title>
 	<?php include 'included/common-head.html'; ?>
 </head>
-<body>
+<body onload="zeroNumber()">
 	 <?php include 'included/header.html'; ?>
 	<h1>Contact</h1>
 		<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2110.8790867789667!2d5.485129598366286!3d51.454086557947385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snl!4v1519396484234" width="900" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -29,20 +29,5 @@ $pageTitle = 'Contact page';
 </div>
 <?php include 'included/footer.html'; ?>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</a></button>
-<script>
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-</script>
 </body>
 </html>
