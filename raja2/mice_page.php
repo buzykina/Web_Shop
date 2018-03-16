@@ -227,6 +227,21 @@ $pageTitle = 'Mice page';
 				<h3>$25</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
+	<ul class="show apple white bluetooth">
+		<li><img src="images/mouse13.png"></li>
+			<li><h5>APPLE Magic Trackpad 2</h5>
+                The new Magic Trackpad from Apple has a new design and has a rechargeable battery.<br>
+				Device type: Trackpad<br>
+				Connections: Lightning<br>
+				Supported operating systems: OS X 10.11 or higher<br>
+				Other characteristics: Bluetooth<br>
+				Width: 16.0 cm<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+		    </li>
+			<li id = "price">
+				<h3>$144</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
+			</li>
+	</ul>
 </div>
 </div>
 

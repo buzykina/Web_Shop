@@ -264,6 +264,24 @@ $pageTitle = 'Laptops page';
 				</li>
 				</ul>
 			</div>
+			<div id = "product">
+				<ul class="asus show windows white">
+				<li><img src="images/laptop13.png"></li>
+				<li>
+					<h5>ASUS VivoBook E X207NA-FD073T</h5>
+					11.6 inch HD • Intel Celeron N3350 • 2 GB • 32 GB eMMC • Intel HD Graphics 500<br>
+					Resolution: 1366 x 768<br> 
+					Optical drive: No<br>
+					Operating system: Windows 10 S<br>
+					Form factor: Fixed screen <br>
+					Display diagonal: 29.4 cm<br>
+					&#10026;&#10026;&#10026;&#10026;<br>
+				</li>
+				<li id = "price">
+					<h3>$199</h3><br><button class="AddToBasket" onclick="AddToBasket()" >Add to cart</button>
+				</li>
+				</ul>
+			</div>
 	</div>
 </div>
 <?php include 'included/footer.html'; ?>

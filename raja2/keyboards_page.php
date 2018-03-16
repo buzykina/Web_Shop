@@ -253,6 +253,23 @@ $pageTitle = 'keyboards page';
 				</li>
 			</ul>
 		</div>
+		<div id = "product">
+			<ul class="show logitechg wireless white">
+				<li><img src="images/Keyboard13.png"></li>
+				<li><h5>LOGITECH K280e</h5>
+					The Logitech K280e keyboard offers comfort while typing thanks to the palm rest.<br>
+					Device type: Keyboard<br>
+					Supported platform: PC<br>
+					Signal transmission: Wireless<br>
+					Colour: White<br>
+					Other characteristics: palm rest<br>
+					&#10026;&#10026;&#10026;
+				</li>
+				<li id = "price">
+					<h3>$160</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
+				</li>
+			</ul>
+		</div>
 </div>
 </div>
 <?php include 'included/footer.html'; ?>
