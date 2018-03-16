@@ -20,7 +20,7 @@ $pageTitle = 'Laptops page';
 			<h4>Filter by</h4>
 			<input type="radio" class="radio" onclick="filter()" name="filter" id="Brand_radio"><label>Brand</label><br>
 			<input type="radio" class="radio" onclick="filter()" name="filter" id="OS_radio"><label>OS</label><br>
-			<input type="radio" class="radio" onclick="filter()" name="filter" id="Price_radio"><label>Price</label><br>
+			<!--<input type="radio" class="radio" onclick="filter()" name="filter" id="Price_radio"><label>Price</label><br>-->
 			<input type="radio" class="radio" onclick="filter()" name="filter" id="Colour_radio"><label>Colour</label><br>
 		</div>
 		<div id = "Brand">
@@ -29,10 +29,10 @@ $pageTitle = 'Laptops page';
 			<input type="radio" class="radio" onclick="asus()" name="brand" value="Asus"><label>Asus</label><br>
 			<input type="radio" class="radio" onclick="acer()" name="brand" value="Acer"><label>Acer</label><br>
 		</div>
-		<div id = "Price">
+		<!--<div id = "Price">
 			<h4>Price Range</h4>
 			<input type="range" min="229" max="2899" value="50">
-		</div>
+		</div>-->
 		<br>
 		<div  id = "OS">
 			<h4>Operating System</h4>
@@ -46,7 +46,7 @@ $pageTitle = 'Laptops page';
 			<input type="radio" onclick="black()" name="colour" value="Black" ><label>Black</label><br>
 			<input type="radio" onclick="white()" name="colour" value="White"><label>White</label><br>
 		</div>
-		<button class = "otherfilters" onclick="otherfilters()">Other filters</button>
+		<button id = "otherfilters" onclick="otherfilters()">Other filters</button>
 	</div>
 
 

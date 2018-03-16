@@ -12,37 +12,42 @@ $pageTitle = 'Speakers page';
  <?php include 'included/header.html'; ?>
 <h1>Speakers</h1>
 <div id="combined">
-<div class="fillters">
+<div class="filters">
 	<h2>Filters</h2>
+		<div id = "Filter">
+			<h4>Filter by</h4>
+			<input type="radio" class="radio" onclick="filter()" name="filter" id="Brand_radio"><label>Brand</label><br>
+			<input type="radio" class="radio" onclick="filter()" name="filter" id="OS_radio"><label>Type</label><br>
+			<!--<input type="radio" class="radio" onclick="filter()" name="filter" id="Price_radio"><label>Price</label><br>-->
+			<input type="radio" class="radio" onclick="filter()" name="filter" id="Colour_radio"><label>Colour</label><br>
+		</div>
 
-	<h4>Brand</h4>
-	<div>
+	<div id  = "Brand">
+		<h4>Brand</h4>
 		<input type="radio" name="brand" value="JBL" onclick="jbl()"><label>JBL</label><br>
 		<input type="radio" name="brand" value="SONY" onclick="sony()"><label>SONY</label><br>
 		<input type="radio" name="brand" value="Bose" onclick="bose()"><label>Bose</label><br>
 	</div>
 
-	<h4>Price Range</h4>
-	<div>
+	<!--<div id = "Price">
+		<h4>Price Range</h4>
 		<input type="range" min="35" max="225" value="50">
-	</div>
+	</div>-->
 	<br>
 
-	<h4>Type</h4>
-
-	<div>
+	<div id = "OS">
+		<h4>Type</h4>
 		<input type="radio" name="type" value="Waterproof" onclick="waterproof()" ><label>Waterproof</label><br>
 		<input type="radio" name="type" value="Not waterproof" onclick="notwaterproof()"><label>Not waterproof</label><br>
 	</div>
 
-	<h4>Colour</h4>
-
-	<div>
+	<div id = "Colour">
+		<h4>Colour</h4>
 		<input type="radio" name="colour" value="Blue" onclick="blue()"><label>Blue</label><br>
 		<input type="radio" name="colour" value="Black" onclick="black_speaker()"><label>Black</label><br>
 		<input type="radio" name="colour" value="Gray" onclick="gray()"><label>Gray</label><br>
 	</div>
-	<br>
+	<button id = "otherfilters" onclick="otherfilters()">Other filters</button>
 </div>
 <div id="products">
 	<div id = "product">

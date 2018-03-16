@@ -12,38 +12,42 @@ $pageTitle = 'Mice page';
 <?php include 'included/header.html'; ?>
 <h1>Mice</h1>
 <div id="combined">
-<div class="fillters">
+<div class="filters">
 	<h2>Filters</h2>
+		<div id = "Filter">
+			<h4>Filter by</h4>
+			<input type="radio" class="radio" onclick="filter()" name="filter" id="Brand_radio"><label>Brand</label><br>
+			<input type="radio" class="radio" onclick="filter()" name="filter" id="OS_radio"><label>Signal transmission</label><br>
+			<!--<input type="radio" class="radio" onclick="filter()" name="filter" id="Price_radio"><label>Price</label><br>-->
+			<input type="radio" class="radio" onclick="filter()" name="filter" id="Colour_radio"><label>Colour</label><br>
+		</div>
 
-	<h4>Brand</h4>
-	<div>
+	<div id = "Brand">
+		<h4>Brand</h4>
 		<input type="radio" onclick="apple_mouse()" name="brand" value="Apple" ><label>Apple</label><br>
 		<input type="radio" onclick="speedlink_mouse()" name="brand" value="Asus"><label>Speedlink</label><br>
 		<input type="radio" onclick="logitech_mouse()" name="brand" value="Logitech"><label>Logitech</label><br>
 	</div>
-
-	<h4>Price Range</h4>
-	<div>
+	<!--<div id  = "Price">
+		<h4>Price Range</h4>
 		<input type="range" min="12" max="105" value="50">
-	</div>
+	</div>-->
 	<br>
 
-	<h4>Signal transmission</h4>
-
-	<div>
+	<div id = "OS">
+		<h4>Signal transmission</h4>
 		<input type="radio" onclick="bluetooth()" name="OS" value="Bluetooth" ><label>Bluetooth</label><br>
 		<input type="radio" onclick="wired()" name="OS" value="Wired"><label>Wired</label><br>
 		<input type="radio" onclick="wireless()" name="OS" value="Wireless"><label>Wireless</label><br>
 	</div>
 
-	<h4>Colour</h4>
-
-	<div>
+	<div id = "Colour">
+		<h4>Colour</h4>
 		<input type="radio" onclick="red_mouse()" name="colour" value="Red"><label>Red</label><br>
 		<input type="radio" onclick="black_mouse()" name="colour" value="Black" ><label>Black</label><br>
 		<input type="radio" onclick="white_mouse()" name="colour" value="White"><label>White</label><br>
 	</div>
-	<br>
+	<button id = "otherfilters" onclick="otherfilters()">Other filters</button>
 </div>
 <div id="products">
 	<div id = "product">

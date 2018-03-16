@@ -38,20 +38,20 @@ function filter(){
 	{
 		document.getElementById('OS').style.cssText = 'display:block !important';
 	}
-	if(document.getElementById('Price_radio').checked)
+	/*if(document.getElementById('Price_radio').checked)
 	{
 		document.getElementById('Price').style.cssText = 'display:block !important';
-	}
+	}*/
 	if(document.getElementById('Colour_radio').checked)
 	{
 		document.getElementById('Colour').style.cssText = 'display:block !important';
 	}
 }
 function otherfilters(){
-	document.getElementsByClassName('otherfilters').style.cssText = "display:none !important";
+	document.getElementById('otherfilters').style.cssText = "display:none !important";
 	document.getElementById('OS').style.cssText = 'display:none !important';
 	document.getElementById('Brand').style.cssText = 'display:none !important';
-	document.getElementById('Price').style.cssText = 'display:none !important';
+	/*document.getElementById('Price').style.cssText = 'display:none !important';*/
 	document.getElementById('Colour').style.cssText = 'display:none !important';
 	document.getElementById('Filter').style.cssText = 'display:block !important';
 	

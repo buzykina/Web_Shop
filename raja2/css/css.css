@@ -228,7 +228,7 @@ input[type=range]:focus::-ms-fill-upper {
 	left:20px;
 }
 
-.otherfilters{
+#otherfilters{
 	display:none;
 	width:70px !important;
 	font-size: 10px !important;
