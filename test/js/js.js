@@ -229,7 +229,7 @@ function test(){
 	}
 	else{
 		$('.lname_ok').addClass('showreg');
-		$('.lname_ok')..removeClass('hidden');
+		$('.lname_ok').removeClass('hidden');
 		$('.lname').addClass('hidden');
 		$('.lname').removeClass('showreg');
 	}
