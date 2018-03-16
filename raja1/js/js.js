@@ -209,94 +209,52 @@ function test(){
 
 
 	if (fname == "") {
-		$('.fname').addClass('showreg');
-		$('.fname').removeClass('hidden');
-		$('.fname_ok').addClass('hidden');
-		$('.fname_ok').removeClass('showreg');
+		$('.fname').addClass('showreg').removeClass('hidden');
 	}
 	else{
-		$('.fname_ok').addClass('showreg');
-		$('.fname_ok').removeClass('hidden');
-		$('.fname').addClass('hidden');
-		$('.fname').removeClass('showreg');
+		$('.fname_ok').addClass('showreg').removeClass('hidden');
 	}
 
 	if (lname == "") {
-		$('.lname').addClass('showreg');
-		$('.lname').removeClass('hidden');
-		$('.lname_ok').addClass('hidden');
-		$('.lname_ok').removeClass('showreg');
+		$('.lname').addClass('showreg').removeClass('hidden');
 	}
 	else{
-		$('.lname_ok').addClass('showreg');
-		$('.lname_ok')..removeClass('hidden');
-		$('.lname').addClass('hidden');
-		$('.lname').removeClass('showreg');
+		$('.lname_ok').addClass('showreg').removeClass('hidden');
 	}
 
 	if (phone == "") {
-		$('.phone').addClass('showreg');
-		$('.phone').removeClass('hidden');
-		$('.phone_ok').addClass('hidden');
-		$('.phone_ok').removeClass('showreg');
+		$('.phone').addClass('showreg').removeClass('hidden');
 	}
 	else{
-		$('.phone_ok').addClass('showreg');
-		$('.phone_ok').removeClass('hidden');
-		$('.phone').addClass('hidden');
-		$('.phone').removeClass('showreg');
+		$('.phone_ok').addClass('showreg').removeClass('hidden');
 	}
 
 	if (email == "") {
-		$('.email').addClass('showreg');
-		$('.email').removeClass('hidden');
-		$('.email_ok').addClass('hidden');
-		$('.email_ok').removeClass('showreg');
+		$('.email').addClass('showreg').removeClass('hidden');
 	}
 	else{
-		$('.email_ok').addClass('showreg');
-		$('.email_ok').removeClass('hidden');
-		$('.email').addClass('hidden');
-		$('.email').removeClass('showreg');
+		$('.email_ok').addClass('showreg').removeClass('hidden');
 	}
 
 	if (address == "") {
-		$('.address').addClass('showreg');
-		$('.address').removeClass('hidden');
-		$('.address_ok').addClass('hidden');
-		$('.address_ok').removeClass('showreg');
+		$('.address').addClass('showreg').removeClass('hidden');
 	}
 	else{
-		$('.address_ok').addClass('showreg');
-		$('.address_ok').removeClass('hidden');
-		$('.address').addClass('hidden');
-		$('.address').removeClass('showreg');
+		$('.address_ok').addClass('showreg').removeClass('hidden');
 	}
 
 	if (password == "") {
-		$('.password').addClass('showreg');
-		$('.password').removeClass('hidden');
-		$('.password_ok').addClass('hidden');
-		$('.password_ok').removeClass('showreg');
+		$('.password').addClass('showreg').removeClass('hidden');
 	}
 	else{
-		$('.password_ok').addClass('showreg');
-		$('.password_ok').removeClass('hidden');
-		$('.password').addClass('hidden');
-		$('.password').removeClass('showreg');
+		$('.password_ok').addClass('showreg').removeClass('hidden');
 	}
 
 	if (repassword == "") {
-		$('.repassword').addClass('showreg');
-		$('.repassword').removeClass('hidden');
-		$('.repassword_ok').addClass('hidden');
-		$('.repassword_ok').removeClass('showreg');
+		$('.repassword').addClass('showreg').removeClass('hidden');
 	}
 	else{
-		$('.repassword_ok').addClass('showreg');
-		$('.repassword_ok').removeClass('hidden');
-		$('.repassword').addClass('hidden');
-		$('.repassword').removeClass('showreg');
+		$('.repassword_ok').addClass('showreg').removeClass('hidden');
 	}
 
 	if(fname == "" || lname == "" || phone == "" || email == "" ||address == "" ||password == "" || repassword == ""){
@@ -304,14 +262,10 @@ function test(){
 	}
 	else{
 		if (password != repassword) {
-			$('.repassword').addClass('showreg');
-		    $('.repassword').removeClass('hidden');
-		    $('.repassword_ok').addClass('hidden');
-		    $('.repassword_ok').removeClass('showreg');
-			$('.password').addClass('showreg');
-			$('.password').removeClass('hidden');
-			$('.password_ok').addClass('hidden');
-			$('.password_ok').removeClass('showreg');;
+			$('.password').addClass('showreg').removeClass('hidden');
+			$('.password_ok').addClass('hidden').removeClass('showreg');
+			$('.repassword').addClass('showreg').removeClass('hidden');
+			$('.repassword_ok').addClass('hidden').removeClass('showreg');
 
 			alert("Passwords do not match");
 
@@ -321,10 +275,8 @@ function test(){
 		else{
 			if (phonenumber == true) {
 
-				$('.phone').addClass('showreg');
-				$('.phone').removeClass('hidden');
-				$('.phone_ok').addClass('hidden');
-				$('.phone_ok').removeClass('showreg');
+				$('.phone').addClass('showreg').removeClass('hidden');
+				$('.phone_ok').addClass('hidden').removeClass('showreg');
 
 				alert("Enter a valid phonenumber")
 				return false;
