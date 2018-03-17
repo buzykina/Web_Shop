@@ -14,44 +14,37 @@ $pageTitle = 'Laptops page';
 <h1>Laptops</h1>
 
 <div id="combined">
-	<div class="filters">
+<div class="filters">
 		<h2>Filters</h2>
-		<div id = "Filter">
-			<h4>Filter by</h4>
-			<input type="radio" class="radio" onclick="filter()" name="filter" id="Brand_radio"><label>Brand</label><br>
-			<input type="radio" class="radio" onclick="filter()" name="filter" id="OS_radio"><label>OS</label><br>
-			<!--<input type="radio" class="radio" onclick="filter()" name="filter" id="Price_radio"><label>Price</label><br>-->
-			<input type="radio" class="radio" onclick="filter()" name="filter" id="Colour_radio"><label>Colour</label><br>
-		</div>
+		<h4>Filter by</h4>
+		<div><input type="radio" class="radio" onclick="filter()" name="filter" id="Brand_radio"><label>Brand</label></div>
 		<div id = "Brand">
-			<h4>Brand</h4>
-			<input type="radio" class="radio" id="test" onclick="apple()" name="brand" value="Apple"><label>Apple</label><br>
+			<input type="radio" class="radio" onclick="apple()" name="brand" value="Apple"><label>Apple</label><br>
 			<input type="radio" class="radio" onclick="asus()" name="brand" value="Asus"><label>Asus</label><br>
-			<input type="radio" class="radio" onclick="acer()" name="brand" value="Acer"><label>Acer</label><br>
+			<input type="radio" class="radio" onclick="acer()" name="brand" value="Acer"><label>Acer</label>
+		</div><br>
+			<div><input type="radio" class="radio" onclick="filter()" name="filter" id="OS_radio"><label>OS</label></div>
+		<div  id = "OS">
+			<input type="radio" onclick="windows()" name="OS" value="Mirrosoft Windows"><label>Microsoft Windows</label><br>
+			<input type="radio" onclick="chrome()" name="OS" value="Google Chrome OS"><label>Google Chrome OS</label><br>
+			<input type="radio" onclick="macos()" name="OS" value="Apple Mac OS"><label>Apple Mac OS</label>
+		</div><br>
+			<!--<input type="radio" class="radio" onclick="filter()" name="filter" id="Price_radio"><label>Price</label><br>-->
+			<div><input type="radio" class="radio" onclick="filter()" name="filter" id="Colour_radio"><label>Colour</label></div>
+		<div id = "Colour">
+			<input type="radio" onclick="silver()" name="colour" value="Silver"><label>Silver</label><br>
+			<input type="radio" onclick="black()" name="colour" value="Black" ><label>Black</label><br>
+			<input type="radio" onclick="white()" name="colour" value="White"><label>White</label><br>
 		</div>
 		<!--<div id = "Price">
 			<h4>Price Range</h4>
 			<input type="range" min="229" max="2899" value="50">
 		</div>-->
 		<br>
-		<div  id = "OS">
-			<h4>Operating System</h4>
-			<input type="radio" onclick="windows()" name="OS" value="Mirrosoft Windows"><label>Microsoft Windows</label><br>
-			<input type="radio" onclick="chrome()" name="OS" value="Google Chrome OS"><label>Google Chrome OS</label><br>
-			<input type="radio" onclick="macos()" name="OS" value="Apple Mac OS"><label>Apple Mac OS</label><br>
-		</div>
-		<div id = "Colour">
-			<h4>Colour</h4>
-			<input type="radio" onclick="silver()" name="colour" value="Silver"><label>Silver</label><br>
-			<input type="radio" onclick="black()" name="colour" value="Black" ><label>Black</label><br>
-			<input type="radio" onclick="white()" name="colour" value="White"><label>White</label><br>
-		</div>
-		<button id = "otherfilters" onclick="otherfilters()">Other filters</button>
-	</div>
+</div>
 
 
-	<div id="products">
-			<div id = "product">
+	<div class="products">
 				<ul class="apple show macos white">
 				<li><img src="images/laptop1.png"></li>
 				<li>
@@ -64,12 +57,10 @@ $pageTitle = 'Laptops page';
 					Form factor: Fixed screen<br>
 					&#10026;&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$949</h3><br><button class="AddToBasket" onclick="AddToBasket()" >Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="acer show windows black">
 				<li><img src="images/laptop2.png"></li>
 				<li>
@@ -82,12 +73,10 @@ $pageTitle = 'Laptops page';
 					Display diagonal: 14 inches<br>
 					&#10026;&#10026;&#10026;<br>
 					</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$249</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="acer show chrome black">
 				<li><img src="images/laptop3.png"></li>
 				<li>
@@ -100,12 +89,10 @@ $pageTitle = 'Laptops page';
 					Form factor: Fixed screen<br>
 					&#10026;&#10026;&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$279</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="acer show windows black">
 				<li><img src="images/laptop4.png"></li>
 				<li>
@@ -118,12 +105,10 @@ $pageTitle = 'Laptops page';
 					Display diagonal (cm): 33.8 cm<br>
 				    &#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$699</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="apple show macos silver">
 				<li><img src="images/laptop5.png"></li>
 				<li>
@@ -136,12 +121,10 @@ $pageTitle = 'Laptops page';
 					Form factor: Fixed screen<br
 					>&#10026;&#10026;&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$1348</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="acer show windows black">
 				<li><img src="images/laptop6.png"></li>
 				<li>
@@ -154,12 +137,10 @@ $pageTitle = 'Laptops page';
 					Form factor: Fixed screen<br>
 					&#10026;&#10026;<br>
 				</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$799</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="acer show windows black">
 				<li><img src="images/laptop7.png"></li>
 				<li>
@@ -171,12 +152,10 @@ $pageTitle = 'Laptops page';
 					Form factor: Fixed screen <br>
 					Display diagonal: 15.6 inches<br>
 					&#10026;&#10026;&#10026;<br></li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$469</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="acer show windows black">
 				<li><img src="images/laptop8.png"></li>
 				<li>
@@ -189,12 +168,10 @@ $pageTitle = 'Laptops page';
 					Form factor: Fixed screen<br>
 					&#10026;<br>
 				</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$649</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="asus show windows white">
 				<li><img src="images/laptop9.png"></li>
 				<li>
@@ -207,12 +184,10 @@ $pageTitle = 'Laptops page';
 					Display diagonal: 14 inches<br>
 					&#10026;&#10026;&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$449</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="acer show chrome silver">
 				<li><img src="images/laptop10.png"></li>
 				<li>
@@ -225,12 +200,10 @@ $pageTitle = 'Laptops page';
 					Form factor: Foldable screen<br>
 					&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$299</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="acer show windows black">
 				<li><img src="images/laptop11.png"></li>
 				<li>
@@ -243,12 +216,10 @@ $pageTitle = 'Laptops page';
 					Image resolution: HD ready<br>
 					&#10026;&#10026;&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$229</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="apple show macos silver">
 				<li><img src="images/laptop12.png"></li>
 				<li>
@@ -259,12 +230,10 @@ $pageTitle = 'Laptops page';
 					Operating system: Mac OS<br>
 					Battery life: 10 hours <br>
 					Form factor: Fixed screen<br>&#10026;&#10026;&#10026;&#10026;</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$2899</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 				</li>
 				</ul>
-			</div>
-			<div id = "product">
 				<ul class="asus show windows white">
 				<li><img src="images/laptop13.png"></li>
 				<li>
@@ -277,12 +246,11 @@ $pageTitle = 'Laptops page';
 					Display diagonal: 29.4 cm<br>
 					&#10026;&#10026;&#10026;&#10026;<br>
 				</li>
-				<li id = "price">
+				<li class = "price">
 					<h3>$199</h3><br><button class="AddToBasket" onclick="AddToBasket()" >Add to cart</button>
 				</li>
 				</ul>
 			</div>
-	</div>
 </div>
 <?php include 'included/footer.html'; ?>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</a></button>

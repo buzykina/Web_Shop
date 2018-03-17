@@ -13,10 +13,11 @@ $pageTitle = 'Home page';
     
 <div id="slideshow">
     <figure>
-     <img src="images/slideshow2.jpg">    
      <img src="images/slideshow1.jpg">
+     <img src="images/slideshow2.jpg">
      <img src="images/slideshow3.jpg">
      <img src="images/slideshow4.jpg">
+     <img src="images/slideshow1.jpg">
     </figure>
 </div>
 

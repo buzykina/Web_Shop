@@ -544,6 +544,3 @@ text-align: center;
   height:20px;
   display: none;
 }
-#Price,#Brand,#OS,#Colour{
-  display:none !important;
-}

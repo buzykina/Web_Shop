@@ -13,12 +13,12 @@ $pageTitle = 'shopping_cart_2';
 	<p> Hello "Name", </p>
 	<p>Please, chose the most suitable way of delivery for you: </p><br>
 	<label class="container">I will pick it up in store
-    <input type="radio" checked="checked">
+    <input name = "deliver" type="radio" checked="checked">
     <span class="checkmark"></span>
     </label><br>
 
     <label class="container">I would like the products to be delivered 
-    <input type="radio">
+    <input name="deliver" type="radio">
     <span class="checkmark"></span>
     </label>
 </div><br>

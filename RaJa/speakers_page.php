@@ -14,43 +14,32 @@ $pageTitle = 'Speakers page';
 <div id="combined">
 <div class="filters">
 	<h2>Filters</h2>
-		<div id = "Filter">
-			<h4>Filter by</h4>
-			<input type="radio" class="radio" onclick="filter()" name="filter" id="Brand_radio"><label>Brand</label><br>
-			<input type="radio" class="radio" onclick="filter()" name="filter" id="OS_radio"><label>Type</label><br>
+		<h4>Filter by</h4>
+		<div><input type="radio" class="radio" onclick="filter1()" name="filter" id="Brand_radio"><label>Brand</label></div>
+		<div id = "Brand">
+			<input type="radio" name="brand" value="JBL" onclick="jbl()"><label>JBL</label><br>
+			<input type="radio" name="brand" value="SONY" onclick="sony()"><label>SONY</label><br>
+			<input type="radio" name="brand" value="Bose" onclick="bose()"><label>Bose</label>
+		</div><br>
+			<div><input type="radio" class="radio" onclick="filter1()" name="filter" id="OS_radio"><label>Type</label></div>		
+		<div  id = "OS">
+			<input type="radio" name="OS" value="Waterproof" onclick="waterproof()" ><label>Waterproof</label><br>
+		    <input type="radio" name="OS" value="Not waterproof" onclick="notwaterproof()"><label>Not waterproof</label>
+		</div><br>
 			<!--<input type="radio" class="radio" onclick="filter()" name="filter" id="Price_radio"><label>Price</label><br>-->
-			<input type="radio" class="radio" onclick="filter()" name="filter" id="Colour_radio"><label>Colour</label><br>
+			<div><input type="radio" class="radio" onclick="filter1()" name="filter" id="Colour_radio"><label>Colour</label></div>
+		<div id = "Colour">
+			<input type="radio" name="colour" value="Blue" onclick="blue()"><label>Blue</label><br>
+			<input type="radio" name="colour" value="Black" onclick="black_speaker()"><label>Black</label><br>
+			<input type="radio" name="colour" value="Gray" onclick="gray()"><label>Gray</label>
 		</div>
-
-	<div id  = "Brand">
-		<h4>Brand</h4>
-		<input type="radio" name="brand" value="JBL" onclick="jbl()"><label>JBL</label><br>
-		<input type="radio" name="brand" value="SONY" onclick="sony()"><label>SONY</label><br>
-		<input type="radio" name="brand" value="Bose" onclick="bose()"><label>Bose</label><br>
-	</div>
-
-	<!--<div id = "Price">
-		<h4>Price Range</h4>
-		<input type="range" min="35" max="225" value="50">
-	</div>-->
+		<!--<div id = "Price">
+			<h4>Price Range</h4>
+			<input type="range" min="229" max="2899" value="50">
+		</div>-->
 	<br>
-
-	<div id = "OS">
-		<h4>Type</h4>
-		<input type="radio" name="type" value="Waterproof" onclick="waterproof()" ><label>Waterproof</label><br>
-		<input type="radio" name="type" value="Not waterproof" onclick="notwaterproof()"><label>Not waterproof</label><br>
-	</div>
-
-	<div id = "Colour">
-		<h4>Colour</h4>
-		<input type="radio" name="colour" value="Blue" onclick="blue()"><label>Blue</label><br>
-		<input type="radio" name="colour" value="Black" onclick="black_speaker()"><label>Black</label><br>
-		<input type="radio" name="colour" value="Gray" onclick="gray()"><label>Gray</label><br>
-	</div>
-	<button id = "otherfilters" onclick="otherfilters()">Other filters</button>
 </div>
-<div id="products">
-	<div id = "product">
+<div class ="products">
 	<ul class="show jbl waterproof black">
 			<li><img src="images/jbl_1.png"></li>
 			<li><h5>JBL Flip 3 Special Edition</h5>
@@ -59,9 +48,9 @@ $pageTitle = 'Speakers page';
 				Battery life: 10 hours<br>
 				Speaker system: 2.0<br> 
 				Colour: Black<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$85</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
@@ -73,9 +62,9 @@ $pageTitle = 'Speakers page';
 				Battery life: 15 hours<br>
 				Frequency range: 70 Hz - 20 kHz<br> 
 				Colour: Blue<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$235</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
@@ -87,9 +76,9 @@ $pageTitle = 'Speakers page';
 				Battery life: 5 hours<br>
 				Frequency range: 180 Hz - 20 kHz<br> 
 				Colour: Gray<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$35</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
@@ -101,9 +90,9 @@ $pageTitle = 'Speakers page';
 				Width: 13.4 cm<br>
 				Height: 6.4 cm<br> 
 				Colour: Black<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$90</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
@@ -115,9 +104,9 @@ $pageTitle = 'Speakers page';
 				Battery life: 16 hours<br>
 				Waterproof: Yes<br>
 				Colour: Blue<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$50</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
@@ -129,9 +118,9 @@ $pageTitle = 'Speakers page';
 				Battery life: 24 hours<br>
 				Waterproof: Yes<br>
 				Colour: Black<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$160</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
@@ -143,9 +132,9 @@ $pageTitle = 'Speakers page';
 				Battery life: 12 o'clock<br>
 				Waterproof: Yes<br>
 				Colour: Blue<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$85</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
@@ -157,9 +146,9 @@ $pageTitle = 'Speakers page';
 				Signal transmission: wired, wireless<br>
 				Bluetooth: Yes<br>
 				Colour: Black<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$255</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
@@ -171,9 +160,9 @@ $pageTitle = 'Speakers page';
 				Battery life: 12 o'clock<br>
 				Waterproof: Yes<br>
 				Colour: Gray<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$215</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
@@ -185,9 +174,9 @@ $pageTitle = 'Speakers page';
 				Battery life: 6 hours<br>
 				Waterproof: Yess<br>
 				Colour: Blue<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$125</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
@@ -199,9 +188,9 @@ $pageTitle = 'Speakers page';
 				Wifi interface: Yes<br>
 				High Resolution Audio: No<br>
 				Colour: Black<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$225</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>
@@ -213,9 +202,9 @@ $pageTitle = 'Speakers page';
 				Battery life: 10 hours<br>
 				Wireless range: 9 m<br>
 				Colour: Black<br>
-				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;<br>
+				&#x272A; &#x272A; &#x272A; &#x272A; &#x272A;
 		    </li>
-			<li id = "price">
+			<li class = "price">
 				<h3>$195</h3><br><button class="AddToBasket" onclick="AddToBasket()">Add to cart</button>
 			</li>
 	</ul>

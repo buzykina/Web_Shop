@@ -54,7 +54,7 @@ s{
 	text-align: center;
 }
 
-.btn,.filters button{
+.btn{
 	background-color: #636e72;
 	text-decoration-style: Palatino Linotype;
 	text-decoration-color: #dfe6e9;
@@ -219,21 +219,17 @@ input[type=range]:focus::-ms-fill-upper {
 	flex-direction: column;
 	background-color: #dfe6e9;
 	border-radius: 15px;
-	width: 250px;
-	height: 280px;
+	width: 17%;
+	height: 30%;
 	position: sticky;
 	position: -webkit-sticky;
 	top: 10px;
 	bottom: 30px;
 	left:20px;
 }
-
-#otherfilters{
-	display:none;
-	width:70px !important;
-	font-size: 10px !important;
-	margin-left:150px;
-	margin-top:20px;
+#Price,#Brand,#OS,#Colour{
+  display:none !important;
+  margin-left: 28%;
 }
 .products{
 	display: flex;
@@ -243,12 +239,13 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 
-#product ul li{
+.products ul li{
     padding: 23px;
 }
 
-#price{
+.price{
 	float: right;
+	margin-right: 5%;
 	text-align: center;
 }
 .hidden{
@@ -257,7 +254,7 @@ input[type=range]:focus::-ms-fill-upper {
 .show{
 	display:block;
 }
-#products #product ul li img{
+.products ul li img{
   height: 130px;
   width: 180px;
   -webkit-transition: all 0.8s ease;
@@ -266,7 +263,7 @@ input[type=range]:focus::-ms-fill-upper {
           transition: all 0.8s ease;
 }
 
-#products #product ul li img:hover{
+.products ul li img:hover{
    width: 220px;
   height: 170px;
 }
@@ -317,6 +314,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 #slideshow figure{
 	position: relative;
+	z-index: -1;
 	width: 500%;
 	margin: 0;
 	left: 0;
