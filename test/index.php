@@ -11,7 +11,14 @@ $pageTitle = 'Home page';
 <body onload="zeroNumber()">
     <?php include 'included/header.html'; ?>
     
-<img id= "Anim" src="images/futureanimation.jpg">
+<div id="slideshow">
+    <figure>
+     <img src="images/slideshow2.jpg">    
+     <img src="images/slideshow1.jpg">
+     <img src="images/slideshow3.jpg">
+     <img src="images/slideshow4.jpg">
+    </figure>
+</div>
 
 <div id = "FeaturedProduct">
 	<h1><b>Featured Products</b></h1>
