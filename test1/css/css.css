@@ -24,31 +24,33 @@ s{
 	padding-top:40px;
 	display: block;
 	text-align: center;
-	width: 500px;
+	width: 40%;
 	margin: 0 auto;
 	background-color:#dfe6e9;
 	border-radius: 20px;
 	border: 2px solid #636e72;
-	height: 550px;
-}
+	bottom:20%;
 
-.login_form {
-	margin: 0 auto;
+}
+.register_form input{
+	width: 84%;
+}
+.login_form, .register_form {
+	margin-bottom:30px;
 	font-family: Helvetica;	
 	font-size: 15px;
 	text-align: center;
 }
-.login_form label{
+.login_form label, .register_form label{
   font-style: normal;
   font-variant: normal !important;
 }
 #imglog{
-	width: 200px;
-	height: 200px;
+	width: 35%;
 	padding: 20px;
 }
 .inputvals{
-	width: 300px;
+	width: 50%;
 	margin: 0 auto;
 	padding: 5px;
 	text-align: center;
@@ -61,7 +63,7 @@ s{
 	border-radius: 6px;
 	border: 1px solid #2d3436;
 	padding: 5px;
-	width: 100px;
+	width: 100px !important;
 	cursor: pointer;
 }
 
@@ -95,25 +97,33 @@ s{
 
 }
 #forgot_container  {
-	width: 500px;
+	width: 55%;
 	margin: 0 auto;
 	background-color:#dfe6e9;
 	border-radius: 20px;
 	border: 2px solid #636e72;
-	height: 400px;
+	height: 440px;
 	text-align:center;
 }
 
 #register_container{
-	width: 750px;
+	width: 55%;
 	margin: 0 auto;
 	background-color:#dfe6e9;
 	border-radius: 20px;
 	border: 2px solid #636e72;
 	height: 600px;
 }
-
-
+#file{
+	margin-top: 10px;
+    margin-left: 30%;
+}
+#mail{
+	width:85%;
+}
+#password1{
+	width:40%;
+}
 #combined{
 	display: flex;
 	flex: 0 0 auto;

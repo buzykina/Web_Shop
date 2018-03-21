@@ -12,8 +12,9 @@ $pageTitle = 'Sign up page';
 	<div id ="register_container">
 		<h2>Sign Up</h2>
 		<br>
-		<form class="login_form" onsubmit="return test()" action="index.php">
-			<label>Choose a photo to set as your profile picture</label><input type="file" name="photo" value="Choose picture"><br><br>
+		<form class="register_form" onsubmit="return test()" action="index.php">
+			<label>Choose a photo to set as your profile picture</label>
+			<div id = file><input type="file" name="photo" value="Choose picture"></div><br>
 			<label>First Name:</label> <br>
 			<input type="text" id="firstName" placeholder="First Name" width="300" size="100"><img src="images/cross.png" class="hidden fname" height="15px" width="15px"><img src="images/tick.png" class="hidden fname_ok" height="15px" width="15px"><br><br>
 			<label>Last Name:</label> <br>

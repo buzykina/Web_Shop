@@ -13,9 +13,9 @@ $pageTitle = 'Recover Password page';
 		<h2>Recover Password</h2><br>
 			<form class="login_form">
 				<label>Please enter your email id:</label><br><br>
-			    <input type="text" name="recoverEmail" size="50"><br><br>
+			    <input id = "mail" type="text" name="recoverEmail"><br><br>
 				<label>We have sent you a new password that you have to enter below to log in</label><br><br>
-				<input type="text" name="emailPassword" size = "25">    <input class = "btn" type="submit" name="recoverLogIn" value="Enter"><br><br>
+				<input id = "password1" type="text" name="emailPassword">    <input class = "btn" type="submit" name="recoverLogIn" value="Enter"><br><br>
 				<label>Haven't recieved your password yet? Click the button bellow</label><br><br>
 				<input class = "btn" type="submit" name="resendEmailPassword" value="Send Password Again"><br><br>
 				<button class = "btn"><a href="index.php">Home</a></button> 

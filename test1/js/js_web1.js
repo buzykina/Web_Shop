@@ -95,3 +95,21 @@ function filter1(){
 	}
 }
 
+/*Navigation*/
+var menuIsOpen = false;
+function toggleMenu(){
+	if(menuIsOpen) closeMenu();
+	else openMenu();
+}
+
+function openMenu(){
+	if(menuIsOpen) return;
+	$("#center-container").addClass('open');
+	menuIsOpen = true;
+}
+
+function closeMenu(){
+	if(!menuIsOpen) return;
+	$("#center-container").removeClass('open');
+	menuIsOpen = false;
+}
