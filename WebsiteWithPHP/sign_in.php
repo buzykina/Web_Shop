@@ -31,7 +31,13 @@ $host = "localhost";
 		$row = mysql_fetch_array($result);
 
 		if (mysql_num_rows($result)) {
-			header("location: index.php");
+			if (isset($_SESSION["fromShoppingCart"]) && $_SESSION["fromShoppingCart"] == "True") {
+				header("location: shopping_cart_2.php");
+			}
+			else{
+				header("location: index.php");
+			}
+			
 			$_SESSION["currentUser"] = $row['FirstName'];
 			$_SESSION["loggedIn"] = "True";
 			exit();
