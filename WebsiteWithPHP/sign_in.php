@@ -18,7 +18,11 @@ $host = "localhost";
 <head>
 	<title>Sign In</title>
 	<?php include 'included/common-head.html'; ?>
-	<?php 
+	
+</head>
+<body class="logbody" onload="zeroNumber()">
+<?php include 'included/header.html'; ?><br>
+<?php 
 	if (isset($_POST['login'])) {
 		
 		$username = $_POST['inputEmail'];
@@ -47,9 +51,6 @@ $host = "localhost";
 		}
 	}
 ?>
-</head>
-<body class="logbody" onload="zeroNumber()">
-<?php include 'included/header.html'; ?><br>
 <div id ="login_container">
 	<img id="imglog" src="images/sign.png" >
 	<form class="login_form" action="sign_in.php" method="POST">
