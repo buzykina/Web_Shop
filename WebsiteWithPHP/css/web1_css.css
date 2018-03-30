@@ -158,9 +158,9 @@ padding: 4% 4%;
 }
 #searchbtn{
   border: 0 none;
-    background: #1f7f5c url(search.png) center no-repeat;
+    background: center no-repeat;
+    background-image: url(../images/search.png);
     width: 60px;
-    float: left;
     padding: 0;
     text-align: center;
     height: 52px;

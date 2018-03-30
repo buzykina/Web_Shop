@@ -43,7 +43,7 @@
         <div id="center-container">
           <form action = "#" method="post" id="searchBar">
                 <input type="text" name="search" id="search" placeholder="What are you looking for?" list="items_list" >
-              <input type="submit" name="searchbtn" id = "searchbtn">
+              <input type="submit" value = "" name="searchbtn" id = "searchbtn">
               </form>
           
         <datalist id="items_list">
