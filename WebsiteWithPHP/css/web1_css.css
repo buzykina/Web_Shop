@@ -378,38 +378,32 @@ input#img-3:checked ~ .nav-dots label#img-dot-3, {
 .nav1 .prev {
   left: 0;
 }
-
+#delete
+{
+  height: 40px;
+}
 input:checked + .slide-container .nav1 label { display: block; }
-
- #Inv{
-  text-align: center !important;
+table tr td input
+{
+  width:60%;
 }
-.table1,.table2,.table3 {
-  display: table;
- font-style: normal;
+table {
+  font-style: normal;
   font-variant: normal !important;
-}
-.table1 .table-row, .table2 .table-row,.table3 .table-row{
-  display: table-row;
-}
-.table1 .table-cell, .table2 .table-cell, .table1 .tablehead, .table2 .tablehead,.table3 .table-cell, .table3 .tablehead{
-  display: table-cell;
-    padding: 3px 10px;
-}
-.table1 .table-cell{
-  text-align:center;
-}
-
-.table1 .table-cell{
-  padding-top: 20px !important;
-}
-.table1{
   background-color: #3499D4;
   color:white;
-  height:300px;
   border-color:#0E071D ;
   margin-left:auto; 
   margin-right:auto;
+  width:36%;
+}
+table th,table td{
+
+    padding: 3px 10px;
+}
+table td{
+  text-align:center;
+   padding-top: 20px !important;
 }
 .table2{
   margin-left:auto; 
@@ -419,8 +413,7 @@ input:checked + .slide-container .nav1 label { display: block; }
   margin-left:auto; 
   margin-right:25%;
 }
-
-.table1 .tablehead{
+table th{
   color:white !important;
   font-size: 20px;
   height: 30px;
@@ -609,5 +602,4 @@ text-align: center;
     width: 70px;
     height: 70px;
   }
-
-}
+  

@@ -13,11 +13,11 @@ session_start();
 <body onload="zeroNumber()">
 	 <?php 
 
-    if ($_SESSION["loggedIn"] == "True") {
+    if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == "True") {
        include 'included/headerWithPHP.php';
     }
     else{
-        include 'included/header.html';
+        include 'included/header.php';
     }
 
      

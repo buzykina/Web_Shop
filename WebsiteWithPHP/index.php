@@ -12,16 +12,16 @@ session_start();
     <?php include 'included/common-head.html'; ?>
 </head>
 <body onload="zeroNumber()">
-    <?php 
+    <?php
 
-    if ($_SESSION["loggedIn"] == "True") {
-       include 'included/headerWithPHP.php';
+    if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == "True") {
+        include 'included/headerWithPHP.php';
     }
     else{
-        include 'included/header.html';
+        include 'included/header.php';
     }
 
-     
+
     ?>
     
 <div id="slideshow">

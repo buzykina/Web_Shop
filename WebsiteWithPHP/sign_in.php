@@ -21,7 +21,7 @@ $host = "localhost";
 	
 </head>
 <body class="logbody" onload="zeroNumber()">
-<?php include 'included/header.html'; ?><br>
+<?php include 'included/header.php';?><br>
 <?php 
 	if (isset($_POST['login'])) {
 		

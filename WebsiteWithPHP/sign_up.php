@@ -32,7 +32,7 @@ $host = "localhost";
 	<?php include 'included/common-head.html'; ?>
 </head>
 <body onload="zeroNumber()">
-<?php include 'included/header.html'; ?><br>
+<?php include 'included/header.php'; ?><br>
 	<div id ="register_container">
 		<h2>Sign Up</h2>
 		<br>

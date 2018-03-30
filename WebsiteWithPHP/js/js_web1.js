@@ -113,3 +113,9 @@ function closeMenu(){
 	$("#center-container").removeClass('open');
 	menuIsOpen = false;
 }
+function changequantity(id){
+	console.log("aa");
+	var array = document.getElementsByClassName(id);
+	var price =parseInt(array[0].value)*parseInt(array[1].innerHTML);
+	array[2].innerHTML = "$"+price.toFixed(2);
+}
