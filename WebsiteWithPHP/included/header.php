@@ -35,20 +35,17 @@
 ?>
 
 <nav>
-        <img id="menu-button" src="./icons/menu.svg" />
+        <img id="menu-button" onclick="toggleMenu();" src="./icons/menu.svg" />
         <div id="logo">
             <a  href="index.php">
             <img src="images/logo123.png" alt="company logo" />
             </a>
         </div>
         <div id="center-container">
-
-        <form action = "#" method="post">
-          <div id="searchBar">
+          <form action = "#" method="post" id="searchBar">
             	<input type="text" name="search" id="search" placeholder="What are you looking for?" list="items_list" >
-              <input type="submit" value="Search" name="searchbtn">
-          </div>
-        </form>
+              <input type="submit" value="Search" name="searchbtn" id = "searchbtn">
+              </form>
           
         <datalist id="items_list">
   	          <option value="CORSAIR K95 RGB PLATINUM RGB LED">

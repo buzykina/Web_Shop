@@ -156,6 +156,16 @@ padding: 4% 4%;
     margin-right: 5px;
     height: 18px;
 }
+#searchbtn{
+  border: 0 none;
+    background: #1f7f5c url(search.png) center no-repeat;
+    width: 60px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    height: 52px;
+    cursor: pointer;
+}
 #FeaturedProduct
 {
   margin:30px;

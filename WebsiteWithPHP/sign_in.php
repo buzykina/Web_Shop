@@ -36,10 +36,10 @@ $host = "localhost";
 
 		if (mysql_num_rows($result)) {
 			if (isset($_SESSION["fromShoppingCart"]) && $_SESSION["fromShoppingCart"] == "True") {
-				header("location: shopping_cart_2.php");
+				echo '<script>window.location.href=" shopping_cart_2.php";</script>';
 			}
 			else{
-				header("location: index.php");
+				echo '<script>window.location.href=" index.php";</script>';
 			}
 			
 			$_SESSION["currentUser"] = $row['FirstName'];
