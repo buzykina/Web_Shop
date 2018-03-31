@@ -16,9 +16,8 @@ session_start();
        <<div id="Cart3">
     <p> Hello <?php  echo $_SESSION["currentUser"]; ?>, </p>
     <p>Thank you for your purchase!</p>
-    <p>Your OrderInfo was sent to your email!</p>
   <h1><b>Invoice</b></h1>
-    <table>
+    <table id ="table3">
   <tr>
     <th>Product Name</th>
     <th>Quantity</th>
@@ -32,7 +31,7 @@ session_start();
 ?>
 <tr>
   <td><?php echo $product['name'];?></td>
-  <td><label id="1<?php echo $product['laptopID'];?>">"<?php echo $product['quantity'];?>"</label></td>
+  <td><label id="1<?php echo $product['laptopID'];?>"><?php echo $product['quantity'];?></label></td>
   <td>$<label class= "<?php echo $product['laptopID'];?>"><?php echo $product['price'];?></label></td>
   <td><div class= "<?php echo $product['laptopID'];?>">$<?php echo number_format($product['quantity']*$product['price'],2);?></div></td>
 </tr>
@@ -41,24 +40,24 @@ session_start();
 }
 ?>
 </table>
-    <div class="table3">
-    <div class="table-row">
-      <div class="tablehead">Sub Total:</div>
-      <div class="table-cell">$2197</div>
-    </div>
-    <div class="table-row">
-      <div class="tablehead">Shipping costs:</div>
-      <div class="table-cell">$50</div>
-    </div>
-    <div class="table-row">
-      <div class="tablehead">Tax:</div>
-      <div class="table-cell">21%</div>
-    </div>
-    <div class="table-row">
-      <div class="tablehead">Total Amount:</div>
-      <div class="table-cell">$2400</div>
-    </div>
-  </div>
+<table id = "table2">
+  <tr>
+    <th>Sub Total:</th>
+      <td><div class= "<?php echo $product['laptopID'];?>">$<?php echo number_format($product['quantity']*$product['price'],2);?></td>
+  </tr>
+  <tr>
+    <th>Shipping costs:</th>
+    <td>$50</td>
+  </tr>
+   <tr>
+    <th>Tax:</th>
+    <td>21%</td>
+   </tr>
+   <tr>
+    <th>Total Amount:</th>
+    <td><div class= "<?php echo $product['laptopID'];?>">$<?php echo number_format((1+0.21)*($product['quantity']*$product['price']+50),2);?></td>
+   </tr>
+</table>
 </div>
 <a href=logout.php><button id="LogOut">Log out</button></a>
 <a href="index.php"><button id="BackHome" onclick="Back()">Back to home page</button></a>

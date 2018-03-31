@@ -5,18 +5,18 @@
 	if (isset($_POST['searchbtn'])) {
 
 	
-      	$user = "root";
-      	$password = "";
-      	$dbh = new PDO('mysql:host=localhost;dbname=SearchBar', $user, $password);
+      	$user = "dbi392854";
+	$password = "1234";
+      	$dbh = new PDO('mysql:host=tudmysql01.fhict.local;dbname=dbi392854', $user, $password);
         $searchedItem = $_POST['search'];
 
-        $sql_query = "select * from SearchData where Name = '".$searchedItem."' limit 1";
+        $sql_query = "select * from laptop where Name = '".$searchedItem."' limit 1";
 
       	foreach ($dbh->query($sql_query) as $row) {
               
               $type = $row['Type'];
 
-              if ($type == "Laptop") {
+              if ($type == "laptop") {
               	header( "Location: laptops_page.php" );
               }
               elseif ($type == "Keyboard") {

@@ -27,7 +27,7 @@ $host = "studmysql01.fhict.local";
 		$username = $_POST['inputEmail'];
 		$userpassword = $_POST['inputPassword'];
 
-		$sql_query = "select * from customers where Email = '".$username."' AND Password ='".$userpassword."' limit 1";
+		$sql_query = "select * from cu where Email = '".$username."' AND Password ='".$userpassword."' limit 1";
 
 		$result = mysqli_query($connection,$sql_query);
 
@@ -59,7 +59,6 @@ $host = "studmysql01.fhict.local";
 		Password:<br><input type="password" placeholder="Password" class="inputvals" name="inputPassword"><br><br>
 		<input type="submit" class="btn" name="login" value="Login"><br><br>
 		<button class="btn" ><a href="sign_up.php">New here?</a></button><br><br>
-		<button class="btn"><a href="forgotPassword.php">Forgot your password?</a></button> 
 	</form>
 </div><br><br>
 </html>

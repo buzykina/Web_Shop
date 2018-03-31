@@ -17,7 +17,7 @@ $host = "studmysql01.fhict.local";
 		$address = $_POST['address'];
 		$password = $_POST['password'];
 
-		$sql = "INSERT INTO customers(FirstName,LastName,Phonenumber,Email,Address,Password) VALUES('$firstName','$lastName','$phonenumber','$email','$address','$password')";
+		$sql = "INSERT INTO cu(FirstName,LastName,Phonenumber,Email,Address,Password) VALUES('$firstName','$lastName','$phonenumber','$email','$address','$password')";
 
 		mysqli_query($connection1,$sql);
 
@@ -46,8 +46,6 @@ $host = "studmysql01.fhict.local";
 		<h2>Sign Up</h2>
 		<br>
 		<form class="register_form" onsubmit="return test()" action="#" method="post">
-			<label>Choose a photo to set as your profile picture</label>
-			<div id = file><input type="file" name="photo" value="Choose picture"></div><br>
 			<label>First Name:</label> <br>
 			<input type="text" id="firstName" name = "firstName" placeholder="First Name" width="300" size="100"><img src="images/cross.png" class="hidden fname" height="15px" width="15px"><img src="images/tick.png" class="hidden fname_ok" height="15px" width="15px"><br><br>
 			<label>Last Name:</label> <br>

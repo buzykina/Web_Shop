@@ -34,7 +34,7 @@ if(filter_input(INPUT_GET,'action')=='delete')
     ?>
     <div>
   <h1><b>Invoice</b></h1>
-<table>
+<table id = "table3">
   <tr>
     <th>Product Name</th>
     <th>Quantity</th>
