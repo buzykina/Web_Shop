@@ -119,3 +119,10 @@ function changequantity(id){
 	var price =parseInt(array[0].value)*parseInt(array[1].innerHTML);
 	array[2].innerHTML = "$"+price.toFixed(2);
 }
+function Back(){
+$.ajax({
+type: "POST",
+url: "cart.php",
+data: ({action:"unsetsession"})
+});
+}

@@ -61,7 +61,7 @@ session_start();
   </div>
 </div>
 <a href=logout.php><button id="LogOut">Log out</button></a>
-<a href="index.php"><button id="BackHome">Back to home page</button></a>
+<a href="index.php"><button id="BackHome" onclick="Back()">Back to home page</button></a>
     <?php
     }
 

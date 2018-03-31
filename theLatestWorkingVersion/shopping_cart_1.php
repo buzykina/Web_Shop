@@ -75,6 +75,10 @@ if(filter_input(INPUT_GET,'action')=='delete')
   <?php }?>
 <?php
 }
+else
+{
+  echo "<h1>Your cart is empty yet</h1>";
+}
 ?>
 </body>
 </html>
