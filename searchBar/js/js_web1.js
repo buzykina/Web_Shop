@@ -16,16 +16,6 @@ var n=0;
 function AddToBasket() {
 n = n+1;
 document.getElementById('number').innerHTML = n;
-zeroNumber();
-}
-function zeroNumber(){
-	if(document.getElementById('number') .innerHTML==0)
-	{
-		document.getElementById('box').style.display = "none";
-	}	else
-	{
-		document.getElementById('box').style.display = "block";
-	}
 }
 function filter(){
 		document.getElementsByName('OS')[0].checked = false;
@@ -59,6 +49,40 @@ function filter(){
 		document.getElementById('Colour').style.cssText = 'display:block !important';
 		document.getElementById('OS').style.cssText = 'display:none !important';
 		document.getElementById('Brand').style.cssText = 'display:none !important';
+	}
+}
+function filter2(){
+		document.getElementsByName('OS')[0].checked = false;
+		document.getElementsByName('OS')[1].checked = false;
+		document.getElementsByName('OS')[2].checked = false;
+		document.getElementsByName('Color')[0].checked = false;
+		document.getElementsByName('Color')[1].checked = false;
+		document.getElementsByName('Color')[2].checked = false;
+		document.getElementsByName('brand')[0].checked = false;
+		document.getElementsByName('brand')[1].checked = false;
+		document.getElementsByName('brand')[2].checked = false;
+		console.log("aaa");
+	if(document.getElementById('Brand_radio').checked)
+	{
+		document.getElementById('OS').style.cssText = 'display:none !important';
+		document.getElementById('brand').style.cssText = 'display:block !important';
+		document.getElementById('Color').style.cssText = 'display:none !important';
+	}
+	if(document.getElementById('OS_radio').checked)
+	{
+		document.getElementById('OS').style.cssText = 'display:block !important';
+		document.getElementById('brand').style.cssText = 'display:none !important';
+		document.getElementById('Color').style.cssText = 'display:none !important';
+	}
+	/*if(document.getElementById('Price_radio').checked)
+	{
+		document.getElementById('Price').style.cssText = 'display:block !important';
+	}*/
+	if(document.getElementById('Colour_radio').checked)
+	{
+		document.getElementById('Color').style.cssText = 'display:block !important';
+		document.getElementById('OS').style.cssText = 'display:none !important';
+		document.getElementById('brand').style.cssText = 'display:none !important';
 	}
 }
 function filter1(){
@@ -125,4 +149,8 @@ type: "POST",
 url: "cart.php",
 data: ({action:"unsetsession"})
 });
+}
+function formSubmit(id)
+{
+	document.getElementById(id).submit();
 }

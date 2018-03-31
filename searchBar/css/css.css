@@ -237,7 +237,7 @@ input[type=range]:focus::-ms-fill-upper {
 	bottom: 30px;
 	left:20px;
 }
-#Price,#Brand,#OS,#Colour{
+#Price,#Brand,#OS,#Colour,#brand,#Color{
   display:none !important;
   margin-left: 28%;
 }

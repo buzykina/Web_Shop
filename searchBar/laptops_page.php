@@ -64,30 +64,29 @@ else
 ?>
 
 <h1>Laptops</h1>
-
 <div id="combined">
 <div class="filters">
 		<h2>Filters</h2>
 		<h4>Filter by</h4>
-		<div><input type="radio" class="radio" onclick="filter()" name="filter" id="Brand_radio"><label>Brand</label></div>
-		<div id = "Brand">
-			<input type="radio" class="radio" onclick="apple()" name="brand" value="Apple"><label>Apple</label><br>
-			<input type="radio" class="radio" onclick="asus()" name="brand" value="Asus"><label>Asus</label><br>
-			<input type="radio" class="radio" onclick="acer()" name="brand" value="Acer"><label>Acer</label>
-		</div><br>
-			<div><input type="radio" class="radio" onclick="filter()" name="filter" id="OS_radio"><label>OS</label></div>
-		<div  id = "OS">
-			<input type="radio" onclick="windows()" name="OS" value="Mirrosoft Windows"><label>Microsoft Windows</label><br>
-			<input type="radio" onclick="chrome()" name="OS" value="Google Chrome OS"><label>Google Chrome OS</label><br>
-			<input type="radio" onclick="macos()" name="OS" value="Apple Mac OS"><label>Apple Mac OS</label>
-		</div><br>
+<div><input type="radio" class="radio" onclick="filter2()" name="filter" id="Brand_radio"><label>Brand</label></div>
+		<form id = "brand" method = "post">
+			<input type="radio" class="radio" onclick="formSubmit('brand')" name="brand" value="apple"><label>Apple</label><br>
+			<input type="radio" class="radio" onclick="formSubmit('brand')" name="brand" value="asus"><label>Asus</label><br>
+			<input type="radio" class="radio" onclick="formSubmit('brand')" name="brand" value="acer"><label>Acer</label>
+		</form><br>
+			<div><input type="radio" class="radio" onclick="filter2()" name="filter" id="OS_radio"><label>OS</label></div>
+		<form  id = "OS" method ="post">
+			<input type="radio" onclick="formSubmit('OS')" name="OS" value="windows"><label>Microsoft Windows</label><br>
+			<input type="radio" onclick="formSubmit('OS')" name="OS" value="chrome"><label>Google Chrome OS</label><br>
+			<input type="radio" onclick="formSubmit('OS')" name="OS" value="mac"><label>Apple Mac OS</label>
+		</form><br>
 			<!--<input type="radio" class="radio" onclick="filter()" name="filter" id="Price_radio"><label>Price</label><br>-->
-			<div><input type="radio" class="radio" onclick="filter()" name="filter" id="Colour_radio"><label>Colour</label></div>
-		<div id = "Colour">
-			<input type="radio" onclick="silver()" name="colour" value="Silver"><label>Silver</label><br>
-			<input type="radio" onclick="black()" name="colour" value="Black" ><label>Black</label><br>
-			<input type="radio" onclick="white()" name="colour" value="White"><label>White</label><br>
-		</div>
+			<div><input type="radio" class="radio" onclick="filter2()" name="filter" id="Colour_radio"><label>Colour</label></div>
+		<form id = "Color" method = "post">
+			<input type="radio" onclick="formSubmit('Color')" name="Color" value="silver"><label>Silver</label><br>
+			<input type="radio" onclick="formSubmit('Color')" name="Color" value="black" ><label>Black</label><br>
+			<input type="radio" onclick="formSubmit('Color')" name="Color" value="white"><label>White</label><br>
+		</form>
 		<!--<div id = "Price">
 			<h4>Price Range</h4>
 			<input type="range" min="229" max="2899" value="50">
@@ -96,7 +95,46 @@ else
 </div>
 	<div>
 	<?php
-		$sql = 'SELECT * FROM laptop ORDER BY laptopID ASC';
+if(isset($_POST['OS'])){
+        if($_POST['OS'] == 'windows'){
+             //Run query for dateasc
+             $sql = "SELECT * FROM laptop Where OS = 'windows'";
+        }elseif($_POST['OS'] == 'chrome'){
+             //Run query for datedesc
+             $sql = "SELECT * FROM laptop Where OS = 'chrome'";
+        }
+        elseif($_POST['OS'] == 'mac'){
+             //Run query for datedesc
+             $sql = "SELECT * FROM laptop Where OS = 'mac'";
+        }
+    }
+elseif(isset($_POST['Color'])){
+        if($_POST['Color'] == 'silver'){
+             //Run query for red color
+            $sql = "SELECT * FROM laptop Where Color = 'silver'";;
+        }elseif($_POST['Color'] == 'black'){
+             //Run query for green color
+             $sql = "SELECT * FROM laptop Where Color = 'black'";
+        }elseif($_POST['Color'] == 'white'){
+             //Run query for blue color
+            $sql = "SELECT * FROM laptop Where Color = 'white'";
+        }
+}
+elseif(isset($_POST['brand'])){
+        if($_POST['brand'] == 'acer'){
+             //Run query for red color
+            $sql = "SELECT * FROM laptop Where brand = 'acer'";;
+        }elseif($_POST['brand'] == 'asus'){
+             //Run query for green color
+             $sql = "SELECT * FROM laptop Where brand = 'asus'";
+        }elseif($_POST['brand'] == 'apple'){
+             //Run query for blue color
+            $sql = "SELECT * FROM laptop Where brand = 'apple'";
+        }
+}
+else{
+     $sql = 'SELECT * FROM laptop ORDER BY laptopID ASC';
+}
 		$result = mysqli_query($conn,$sql);
 		if($result):
 			if(mysqli_num_rows($result)>0):
