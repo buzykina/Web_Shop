@@ -51,7 +51,7 @@ else
 	<title>Laptops</title>
     <?php include 'included/common-head.html'; ?>
 </head>
-<body>
+<body onload = "zeroNumber()">
  <?php 
 
     if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == "True") {
@@ -69,67 +69,61 @@ else
 		<h2>Filters</h2>
 		<h4>Filter by</h4>
 <div><input type="radio" class="radio" onclick="filter2()" name="filter" id="Brand_radio"><label>Brand</label></div>
-		<form id = "brand" method = "post">
+		<form id = "brand" method = "get">
 			<input type="radio" class="radio" onclick="formSubmit('brand')" name="brand" value="apple"><label>Apple</label><br>
 			<input type="radio" class="radio" onclick="formSubmit('brand')" name="brand" value="asus"><label>Asus</label><br>
 			<input type="radio" class="radio" onclick="formSubmit('brand')" name="brand" value="acer"><label>Acer</label>
 		</form><br>
 			<div><input type="radio" class="radio" onclick="filter2()" name="filter" id="OS_radio"><label>OS</label></div>
-		<form  id = "OS" method ="post">
+		<form  id = "OS" method ="get">
 			<input type="radio" onclick="formSubmit('OS')" name="OS" value="windows"><label>Microsoft Windows</label><br>
 			<input type="radio" onclick="formSubmit('OS')" name="OS" value="chrome"><label>Google Chrome OS</label><br>
 			<input type="radio" onclick="formSubmit('OS')" name="OS" value="mac"><label>Apple Mac OS</label>
 		</form><br>
-			<!--<input type="radio" class="radio" onclick="filter()" name="filter" id="Price_radio"><label>Price</label><br>-->
+			<div><input type="radio" class="radio" onclick="filter2()" name="filter" id="Price_radio"><label>Price</label></div>
+		<form id = "price" method ="get">
+			<h4>Price Range</h4>
+			<input name ="price" oninput = "formSubmit('price')" onchange="formSubmit('price')" type="range" min="229" max="2899" value="229">
+		</form><br>
 			<div><input type="radio" class="radio" onclick="filter2()" name="filter" id="Colour_radio"><label>Colour</label></div>
-		<form id = "Color" method = "post">
+		<form id = "Color" method = "get">
 			<input type="radio" onclick="formSubmit('Color')" name="Color" value="silver"><label>Silver</label><br>
 			<input type="radio" onclick="formSubmit('Color')" name="Color" value="black" ><label>Black</label><br>
 			<input type="radio" onclick="formSubmit('Color')" name="Color" value="white"><label>White</label><br>
 		</form>
-		<!--<div id = "Price">
-			<h4>Price Range</h4>
-			<input type="range" min="229" max="2899" value="50">
-		</div>-->
 		<br>
 </div>
 	<div>
 	<?php
-if(isset($_POST['OS'])){
-        if($_POST['OS'] == 'windows'){
-             //Run query for dateasc
-             $sql = "SELECT * FROM laptop Where OS = 'windows'";
-        }elseif($_POST['OS'] == 'chrome'){
-             //Run query for datedesc
-             $sql = "SELECT * FROM laptop Where OS = 'chrome'";
+if(isset($_GET['OS'])){
+        if($_GET['OS'] == 'windows'){
+             $sql = "SELECT * FROM laptop Where OS = 'windows' ORDER BY laptopID ASC";
+        }elseif($_GET['OS'] == 'chrome'){
+             $sql = "SELECT * FROM laptop Where OS = 'chrome' ORDER BY laptopID ASC";
         }
-        elseif($_POST['OS'] == 'mac'){
-             //Run query for datedesc
-             $sql = "SELECT * FROM laptop Where OS = 'mac'";
+        elseif($_GET['OS'] == 'mac'){
+             $sql = "SELECT * FROM laptop Where OS = 'mac' ORDER BY laptopID ASC";
         }
     }
-elseif(isset($_POST['Color'])){
-        if($_POST['Color'] == 'silver'){
-             //Run query for red color
-            $sql = "SELECT * FROM laptop Where Color = 'silver'";;
-        }elseif($_POST['Color'] == 'black'){
-             //Run query for green color
-             $sql = "SELECT * FROM laptop Where Color = 'black'";
-        }elseif($_POST['Color'] == 'white'){
-             //Run query for blue color
-            $sql = "SELECT * FROM laptop Where Color = 'white'";
+elseif(isset($_GET['price'])){
+            $sql = "SELECT * FROM laptop Where price < ".$_GET['price']." ORDER BY laptopID ASC";
+}
+elseif(isset($_GET['Color'])){
+        if($_GET['Color'] == 'silver'){
+            $sql = "SELECT * FROM laptop Where Color = 'silver' ORDER BY laptopID ASC";;
+        }elseif($_GET['Color'] == 'black'){
+             $sql = "SELECT * FROM laptop Where Color = 'black' ORDER BY laptopID ASC";
+        }elseif($_GET['Color'] == 'white'){
+            $sql = "SELECT * FROM laptop Where Color = 'white' ORDER BY laptopID ASC";
         }
 }
-elseif(isset($_POST['brand'])){
-        if($_POST['brand'] == 'acer'){
-             //Run query for red color
-            $sql = "SELECT * FROM laptop Where brand = 'acer'";;
-        }elseif($_POST['brand'] == 'asus'){
-             //Run query for green color
-             $sql = "SELECT * FROM laptop Where brand = 'asus'";
-        }elseif($_POST['brand'] == 'apple'){
-             //Run query for blue color
-            $sql = "SELECT * FROM laptop Where brand = 'apple'";
+elseif(isset($_GET['brand'])){
+        if($_GET['brand'] == 'acer'){
+            $sql = "SELECT * FROM laptop Where brand = 'acer' ORDER BY laptopID ASC";;
+        }elseif($_GET['brand'] == 'asus'){
+             $sql = "SELECT * FROM laptop Where brand = 'asus' ORDER BY laptopID ASC";
+        }elseif($_GET['brand'] == 'apple'){
+            $sql = "SELECT * FROM laptop Where brand = 'apple' ORDER BY laptopID ASC";
         }
 }
 else{

@@ -16,6 +16,16 @@ var n=0;
 function AddToBasket() {
 n = n+1;
 document.getElementById('number').innerHTML = n;
+zeroNumber();
+}
+function zeroNumber(){
+	if(document.getElementById('number') .innerHTML==0)
+	{
+		document.getElementById('box').style.display = "none";
+	}	else
+	{
+		document.getElementById('box').style.display = "block";
+	}
 }
 function filter(){
 		document.getElementsByName('OS')[0].checked = false;
@@ -67,22 +77,28 @@ function filter2(){
 		document.getElementById('OS').style.cssText = 'display:none !important';
 		document.getElementById('brand').style.cssText = 'display:block !important';
 		document.getElementById('Color').style.cssText = 'display:none !important';
+		document.getElementById('price').style.cssText = 'display:none !important';
 	}
 	if(document.getElementById('OS_radio').checked)
 	{
 		document.getElementById('OS').style.cssText = 'display:block !important';
 		document.getElementById('brand').style.cssText = 'display:none !important';
 		document.getElementById('Color').style.cssText = 'display:none !important';
+		document.getElementById('price').style.cssText = 'display:none !important';
 	}
-	/*if(document.getElementById('Price_radio').checked)
+	if(document.getElementById('Price_radio').checked)
 	{
-		document.getElementById('Price').style.cssText = 'display:block !important';
-	}*/
+		document.getElementById('price').style.cssText = 'display:block !important';
+		document.getElementById('brand').style.cssText = 'display:none !important';
+		document.getElementById('Color').style.cssText = 'display:none !important';
+		document.getElementById('OS').style.cssText = 'display:none !important';
+	}
 	if(document.getElementById('Colour_radio').checked)
 	{
 		document.getElementById('Color').style.cssText = 'display:block !important';
 		document.getElementById('OS').style.cssText = 'display:none !important';
 		document.getElementById('brand').style.cssText = 'display:none !important';
+		document.getElementById('price').style.cssText = 'display:none !important';
 	}
 }
 function filter1(){
